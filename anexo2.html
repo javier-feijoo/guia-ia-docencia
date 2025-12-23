@@ -1,0 +1,1830 @@
+
+<!doctype html>
+<html lang="gl" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Guía educativa para docentes para o uso da IA a nivel profesional e educativo.">
+      
+      
+        <meta name="author" content="Javier Feijóo López">
+      
+      
+        <link rel="canonical" href="https://javier-feijoo.github.io/guia-ia-docencia/anexo2.html">
+      
+      
+        <link rel="prev" href="anexo1.html">
+      
+      
+        <link rel="next" href="anexo3.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Anexo 2 - O uso educativo da Intelixencia Artificial - Guía práctica</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="styles/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#anexo-ii-plantillas-de-prompts-utiles-para-docentes" class="md-skip">
+          Ir ao contido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeceira">
+    <a href="index.html" title="O uso educativo da Intelixencia Artificial - Guía práctica" class="md-header__button md-logo" aria-label="O uso educativo da Intelixencia Artificial - Guía práctica" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            O uso educativo da Intelixencia Artificial - Guía práctica
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Anexo 2
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Procura" placeholder="Procura" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Procurar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando procura
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="O uso educativo da Intelixencia Artificial - Guía práctica" class="md-nav__button md-logo" aria-label="O uso educativo da Intelixencia Artificial - Guía práctica" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    O uso educativo da Intelixencia Artificial - Guía práctica
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guía
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitulo0.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 0
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitulo1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitulo2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitulo3.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitulo4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitulo5.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitulo6.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitulo7.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 7
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitulo8.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 8
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitulo9.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 9
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitulo10.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 10
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitulo11.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 11
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitulo12.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 12
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitulo13.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 13
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitulo14.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 14
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anexos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Anexos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="anexo1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anexo 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anexo 2
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="anexo2.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anexo 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Táboa de contidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Táboa de contidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#como-usar-estes-prompts-paso-a-paso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Como usar estes prompts paso a paso
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-a-prompts-para-planificacion-didactica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BLOQUE A - Prompts para planificación didáctica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-b-prompts-para-creacion-de-actividades-e-tarefas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BLOQUE B - Prompts para creación de actividades e tarefas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-c-adaptacion-de-materiais-e-atencion-a-diversidade-neae" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BLOQUE C - Adaptación de materiais e atención á diversidade (NEAE)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-d-prompts-para-deseno-de-rubricas-e-avaliacion-formativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BLOQUE D – Prompts para deseño de rúbricas e avaliación formativa.
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-e-prompts-para-coordinacion-e-traballo-en-equipo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BLOQUE E - Prompts para coordinación e traballo en equipo
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="anexo3.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anexo 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="anexo4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anexo 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="anexo5.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anexo 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="anexo6.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anexo 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="anexo7.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anexo 7
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="anexo8.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anexo 8
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="anexo9.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glosario
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="anexo10.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recursos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="about/autor.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sobre o autor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="anexo-ii-plantillas-de-prompts-utiles-para-docentes">ANEXO II – Plantillas de prompts útiles para docentes<a class="headerlink" href="#anexo-ii-plantillas-de-prompts-utiles-para-docentes" title="Permanent link">&para;</a></h1>
+<p>Esta sección recolle modelos de prompts deseñados para xerar materiais educativos con intelixencia artificial, especialmente programacións, unidades, rúbricas ou actividades aliñadas coa normativa vixente en Galicia (LOMLOE e decretos autonómicos). Estan estruturados como un modelo editable, e deseñados para:</p>
+<ul>
+<li>Ser copiados directamente nun modelo de IA xerativa.</li>
+<li>Ser modificados facilmente segundo o nivel educativo, materia ou contexto.</li>
+<li>Proporcionar respostas estruturadas e útiles para o traballo docente.</li>
+<li>Lenda de símbolos para personalizar os prompts</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Notacións empregadas nos prompt</p>
+<ul>
+<li><strong>&lt; OBRIGATORIO &gt;</strong>: Debe ser personalizado polo docente (materia, nivel, normativa...).</li>
+<li><strong>[ OPCIONAL ]</strong>: Podes manter, adaptar ou eliminar segundo o contexto.</li>
+</ul>
+</div>
+<hr />
+<h2 id="como-usar-estes-prompts-paso-a-paso">Como usar estes prompts paso a paso<a class="headerlink" href="#como-usar-estes-prompts-paso-a-paso" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Le o prompt completo.</li>
+<li>Substitúe os campos <strong>&lt; OBRIGATORIO &gt;</strong> pola túa información concreta (materia, nivel, normativa…).</li>
+<li>Decide se queres manter ou eliminar os campos <strong>[ OPCIONAL ]</strong>, segundo a realidade do teu centro ou grupo.</li>
+<li>Copia o texto final e pégallo a unha ferramenta de IA como ChatGPT.</li>
+<li>Revisa o resultado xerado e adáptao ao teu contexto educativo, co teu criterio profesional.</li>
+</ul>
+<p><strong>Boas prácticas</strong></p>
+<ul>
+<li>Non esperes un documento final perfecto: a IA ofrece primeiros borradores que cómpre revisar.</li>
+<li>Canta máis información contextual achegues (normativa, fragmentos do currículo, número de sesións...), mellor será a resposta.</li>
+<li>Os prompts son unha axuda ao traballo docente, non unha substitución do mesmo.</li>
+</ul>
+<hr />
+<h2 id="bloque-a-prompts-para-planificacion-didactica">BLOQUE A - Prompts para planificación didáctica<a class="headerlink" href="#bloque-a-prompts-para-planificacion-didactica" title="Permanent link">&para;</a></h2>
+<p>Prompts orientados á planificación anual, trimestral ou de unidades didácticas, especialmente útiles para aforrar tempo e asegurar coherencia co currículo vixente.</p>
+<div class="admonition note">
+<p class="admonition-title">Prompt 1. Planificación anual dun curso</p>
+<p>Axuda a xerar unha planificación xeral dun curso completo aliñada coa LOMLOE e coa normativa galega, que logo debe ser revisada e adaptada polo docente.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Actúa como un experto en deseño curricular en Galicia, cun coñecemento profundo da LOMLOE e da normativa autonómica vixente segundo a etapa educativa. Estás especializado na materia de &lt;MATERIA&gt; no nivel de &lt;NIVEL EDUCATIVO&gt;.
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>Xera unha planificación anual completa e aliñada coa normativa oficial, que inclúa:
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>1. Resultados de aprendizaxe (RA) e a súa correspondencia cos criterios de avaliación (CE).
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>2. Unidades didácticas organizadas cronoloxicamente, indicando o número estimado de sesións por unidade ([DURACIÓN ESTÁNDAR:50MIN]).
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>3. Competencias clave e competencias específicas traballadas en cada unidade.
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>4. Metodoloxía proposta (aprendizaxe cooperativa, aprendizaxe baseada en proxectos, gamificación, aprendizaxe por investigación...).
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>5. Estratexias de avaliación diversificadas (rúbricas, portafolio, avaliación entre iguais, observación sistemática...).
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>6. [RECURSOS DIXITAIS GRATUÍTOS OU OPEN SOURCE ADAPTADOS Á MATERIA E NIVEL.]
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>7. Propostas de atención á diversidade (alumnado con NEAE, diferentes ritmos de aprendizaxe, adaptacións metodolóxicas, etc.).
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>A planificación debe basearse na seguinte normativa de referencia: &lt;SELECCIONA A NORMATIVA SEGUNDO O NIVEL:  
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>- DECRETO 106/2022 (Educación Primaria)
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>- DECRETO 157/2022 (ESO e Bacharelato) 
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>- LEI ORGÁNICA 3/2022 e RD 659/2023 (Formación Profesional)
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>- OUTRAS NORMATIVAS COMPLEMENTARIAS SE PROCEDE&gt;
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>[PODES ACHEGAR FRAGMENTOS DO CURRÍCULO OFICIAL DA MATERIA E NIVEL OU ENLACES AOS DOCUMENTOS NORMATIVOS PARA UNHA MELLOR ADAPTACIÓN]
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>[INDICA SE DESEXAS LIMITAR A EXTENSIÓN DA RESPOSTA (POR EXEMPLO: MÁXIMO 2 PÁXINAS OU 1500 PALABRAS).]
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>[SE PREFIRES UN FORMATO CONCRETO, INDÍCAO: 
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>- ESQUEMA CON EPÍGRAFES NUMERADOS
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>- TÁBOA POR UNIDADES 
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>- DOCUMENTO TIPO PROGRAMACIÓN FORMAL 
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>- TEXTO CORRIDO PARA ADAPTAR A WORD OU PDF]
+</span></code></pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Prompt 2. Deseño dunha unidade didáctica con actividades</p>
+<p><em>Permite crear unha primeira versión de apuntes e actividades dunha unidade didáctica, que o docente pode revisar e adaptar ao seu alumnado.</em></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Actúa como un docente experto en &lt;MATERIA&gt; no nivel educativo de &lt;NIVEL EDUCATIVO&gt;, cun coñecemento sólido da LOMLOE e da normativa curricular vixente en Galicia. Tes experiencia no deseño de unidades didácticas competenciais e inclusivas.
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>Elabora uns apuntes didácticos completos para a unidade titulada [NOME DA UNIDADE], pensados para seren empregados tanto en clase presencial como nunha aula virtual. O contido debe estar adaptado á idade do alumnado, redactado en galego normativo, cunha linguaxe clara, didáctica e accesible. A unidade debe incluír os seguintes apartados:
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>1. Introdución motivadora
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    - Presenta a unidade cun exemplo real, situación cotiá, pregunta guía ou metáfora que conecte cos intereses do alumnado.
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    - Indica brevemente para que serve o que se vai aprender.
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>2. Obxectivos de aprendizaxe
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>    - Formula os obxectivos de maneira clara, comprensible e orientada á acción do alumnado.
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>3. Desenvolvemento dos contidos
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>    - Explica os contidos da unidade de forma estruturada en apartados ou subapartados.
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>    - Inclúe exemplos prácticos, casos sinxelos ou explicacións paso a paso.
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>    - Emprega un ton didáctico, como se fosen apuntes explicados polo docente.
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>4. Esquema ou cadro resumo
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>    - Resume visualmente os conceptos clave da unidade (listas, táboa ou esquema xerárquico).
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>5. Relación co currículo
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>    - Indica a relación da unidade cos criterios de avaliación oficiais correspondentes á materia e nivel.
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>    - (Se é posible) menciona as competencias clave ou específicas implicadas.
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>
+</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>6. Actividades de comprobación
+</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>    -   Propoñer dúas actividades breves e variadas para verificar a comprensión inicial dos contidos (preguntas curtas, pequeno exercicio, reflexión guiada…).
+</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>
+</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>7. Tarefa final de aplicación
+</span><span id="__span-1-28"><a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a>    - Deseña unha tarefa final competencial na que o alumnado aplique o aprendido nun contexto práctico, realista ou creativo.
+</span><span id="__span-1-29"><a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a>    - Indica que se avalía coa tarefa e que produto final se espera.
+</span><span id="__span-1-30"><a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a>
+</span><span id="__span-1-31"><a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a>8. Atención á diversidade
+</span><span id="__span-1-32"><a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a>    - Inclúe propostas sinxelas de adaptación da unidade para diferentes ritmos de aprendizaxe ou necesidades educativas (simplificación, ampliación, apoio visual…).
+</span><span id="__span-1-33"><a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a>
+</span><span id="__span-1-34"><a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a>9. Resumo final tipo “chuleta”
+</span><span id="__span-1-35"><a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a>    - Pecha a unidade cun resumo moi sintético das ideas esenciais que o alumnado debería lembrar.
+</span><span id="__span-1-36"><a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a>
+</span><span id="__span-1-37"><a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a>[INDICA SE DESEXAS LIMITAR A EXTENSIÓN TOTAL DA UNIDADE (POR EX: 1 PÁXINA, 1200 PALABRAS, ETC.)]
+</span><span id="__span-1-38"><a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a>
+</span><span id="__span-1-39"><a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a>[INDICA O FORMATO DE SADA PREFERIDO:  
+</span><span id="__span-1-40"><a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a>- TEXTO CORRIDO PARA APUNTES  
+</span><span id="__span-1-41"><a id="__codelineno-1-41" name="__codelineno-1-41" href="#__codelineno-1-41"></a>- ESTRUTURA CON TÍTULOS E SUBTÍTULOS  
+</span><span id="__span-1-42"><a id="__codelineno-1-42" name="__codelineno-1-42" href="#__codelineno-1-42"></a>- DOCUMENTO PREPARADO PARA AULA VIRTUAL 
+</span><span id="__span-1-43"><a id="__codelineno-1-43" name="__codelineno-1-43" href="#__codelineno-1-43"></a>- FORMATO MIXTO (EXPLICACIÓN + ACTIVIDADES DESTACADAS)]
+</span><span id="__span-1-44"><a id="__codelineno-1-44" name="__codelineno-1-44" href="#__codelineno-1-44"></a>
+</span><span id="__span-1-45"><a id="__codelineno-1-45" name="__codelineno-1-45" href="#__codelineno-1-45"></a>[PODES ACHEGAR CRITERIOS DE AVALIACIÓN CONCRETOS, FRAGMENTOS DO CURRÍCULO OU CARACTERÍSTICAS DO GRUPO AULA PARA UNHA MAIOR ADAPTACIÓN.]
+</span></code></pre></div>
+</div>
+<hr />
+<h2 id="bloque-b-prompts-para-creacion-de-actividades-e-tarefas">BLOQUE B - Prompts para creación de actividades e tarefas<a class="headerlink" href="#bloque-b-prompts-para-creacion-de-actividades-e-tarefas" title="Permanent link">&para;</a></h2>
+<p><em>Modelos de prompts para deseñar actividades, exercicios e tarefas competenciais, pensados para apoiar o traballo docente sen substituír o papel activo do alumnado.</em></p>
+<div class="admonition note">
+<p class="admonition-title">Prompt 3. Actividade competencial contextualizada</p>
+<p><em>Este prompt permite crear actividades significativas que conectan os contidos coa vida do alumnado. Son útiles para substituír exercicios memorísticos por tarefas prácticas con sentido real e avaliación competencial.</em></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Actúa como un docente especialista en &lt;MATERIA&gt; no nivel de &lt;NIVEL EDUCATIVO&gt;, cun coñecemento actualizado da LOMLOE e da normativa curricular vixente en Galicia.
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>Deseña unha actividade competencial contextualizada sobre o tema &lt;TEMA OU CONTIDO&gt;, dirixida ao alumnado dese nivel, e adaptada á súa idade e realidade.
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>A actividade debe incluír os seguintes elementos:
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>1. Situación ou contexto realista
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    -Formula un enunciado motivador que presente un problema, reto ou situación significativa e próxima ao alumnado (vida cotiá, contorno social, interese cultural, medio ambiente, tecnoloxía...).
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>2. Obxectivos de aprendizaxe
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>    -Define con claridade que aprendizaxes se buscan desenvolver, en termos comprensibles para o docente.
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>3. Instrucións para o alumnado
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>    -Redacta as indicacións paso a paso, indicando que deben facer, que produto final se agarda e que ferramentas ou recursos poden empregar.
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>4.Produto final esperado
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>    - Describe o resultado que debe elaborar o alumnado (presentación, texto, cartel, mapa, vídeo, maqueta, informe, proposta, etc.).
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>    - Indica se é individual, en parellas ou en grupo.
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>5. Criterios de avaliación asociados
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>    - Establece criterios claros, aliñados co currículo oficial, que permitan avaliar o grao de logro da tarefa.
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>    - Se é posible, indica as competencias clave implicadas.
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>
+</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>6. Variantes de dificultade
+</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a>    - Proporciona opcións para adaptar a actividade:
+</span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a>        - Variante de reforzo (máis guiada ou simplificada)
+</span><span id="__span-2-26"><a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a>        - Variante de ampliación (maior complexidade, reto creativo ou investigación)
+</span><span id="__span-2-27"><a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a>
+</span><span id="__span-2-28"><a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a>7. Consello de deseño
+</span><span id="__span-2-29"><a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a>    A actividade non debe ser resoluble automaticamente cunha ferramenta de IA. Debe esixir comprensión, reflexión, toma de decisións, creatividade ou análise por parte do alumnado.
+</span><span id="__span-2-30"><a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a>
+</span><span id="__span-2-31"><a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a>[SE O DESEXAS, INDICA SE A ACTIVIDADE VAI DIRIXIDA A UN CONTEXTO CONCRETO (POR EXEMPLO: CENTRO RURAL, GRUPO CON NEAE, AULA BILINGÜE...).]
+</span><span id="__span-2-32"><a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a>
+</span><span id="__span-2-33"><a id="__codelineno-2-33" name="__codelineno-2-33" href="#__codelineno-2-33"></a>[PODES INDICAR UN FORMATO DE SAÍDA PREFERIDO (FOLLA DE AULA, PROPOSTA EN FORMATO TEXTO, TÁBOA EDITABLE, ETC.).]
+</span><span id="__span-2-34"><a id="__codelineno-2-34" name="__codelineno-2-34" href="#__codelineno-2-34"></a>
+</span><span id="__span-2-35"><a id="__codelineno-2-35" name="__codelineno-2-35" href="#__codelineno-2-35"></a>[TAMÉN PODES INCLUÍR OS CRITERIOS DE AVALIACIÓN CONCRETOS DO CURRÍCULO OU CARACTERÍSTICAS DO TEU ALUMNADO PARA AFINAR A RESPOSTA.]
+</span></code></pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Prompt 4. Tarefa tipo ABP ou proxecto curto</p>
+<p><em>Este prompt permite deseñar proxectos curtos ou tarefas baseadas en retos, ideais para aplicar metodoloxías activas como o ABP, e fomentar aprendizaxes reais, prácticas e colaborativas. A estrutura permite adaptalos a distintas materias, niveis e duracións.</em></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Actúa como un deseñador de proxectos educativos con experiencia en metodoloxías activas, especialmente en Aprendizaxe Baseada en Proxectos (ABP). Estás especializado en &lt;ETAPA EDUCATIVA&gt; e coñeces a LOMLOE e a normativa curricular vixente en Galicia.
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>Propón un proxecto curto ou tarefa tipo ABP baseada nun reto ou pregunta guía sobre &lt;TEMA OU PROBLEMA&gt;, pensado para desenvolverse en varias sesións e fomentar unha aprendizaxe significativa, activa e colaborativa. A proposta debe incluír os seguintes elementos:
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>1. Contexto do reto
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    - Formula un escenario realista ou verosímil que contextualice o proxecto e conecte cos intereses ou contorna do alumnado.
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    - Pode basearse nun problema local, situación social, reto científico, desafío tecnolóxico, etc.
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>2. Pregunta guía ou reto central
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>    - Formula unha pregunta aberta que sirva de motor da investigación ou acción do alumnado.
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>    - Debe fomentar a curiosidade, o pensamento crítico e a creatividade.
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>3. Fases do proxecto
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>    - Describe as principais fases ou pasos do proxecto (inicio, exploración, desenvolvemento, presentación...).
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>    - Indica actividades ou tarefas clave en cada fase.
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>4. Roles do alumnado
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>    - Define como se organiza o alumnado (traballo individual, parellas, grupos).
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>    - Podes propoñer roles específicos (coordinador/a, investigador/a, creativo/a, relator/a...) para promover a colaboración.
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>5. Produtos intermedios e produto final
+</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>    - Especifica os produtos que deben xerar durante o proceso e cal será o produto final do proxecto (infografía, presentación, maqueta, vídeo, proposta de mellora, etc.).
+</span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>
+</span><span id="__span-3-24"><a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>6. Uso da intelixencia artificial (IA)
+</span><span id="__span-3-25"><a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a>    - Indica en que fases pode empregarse a IA (permitido), en cales se debería limitar (axuda parcial), e en cales debe evitarse (traballo propio imprescindible).
+</span><span id="__span-3-26"><a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a>    - Asegura un uso responsable, creativo e ético da IA.
+</span><span id="__span-3-27"><a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a>
+</span><span id="__span-3-28"><a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a>7. Evidencias avaliables centradas no proceso
+</span><span id="__span-3-29"><a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a>    - Indica que aspectos se poden avaliar durante o desenvolvemento do proxecto (participación, investigación, reflexión, presentación oral, uso de fontes, etc.).
+</span><span id="__span-3-30"><a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a>    - Podes engadir criterios de avaliación reais se o desexas.
+</span><span id="__span-3-31"><a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a>
+</span><span id="__span-3-32"><a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a>8. [ALIÑAMENTO CURRICULAR]
+</span><span id="__span-3-33"><a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a>    - [SE O PRECISAS, ENGADE OS CRITERIOS DE AVALIACIÓN E COMPETENCIAS CLAVE ASOCIADOS SEGUNDO O CURRÍCULO DA MATERIA E NIVEL.]
+</span><span id="__span-3-34"><a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a>
+</span><span id="__span-3-35"><a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a>9. [ADAPTACIÓNS]
+</span><span id="__span-3-36"><a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a>    - [PODES INDICAR VARIANTES PARA ATENCIÓN Á DIVERSIDADE (TEMPO EXTRA, APOIO VISUAL, AGRUPAMENTOS FLEXIBLES, ETC.).]
+</span><span id="__span-3-37"><a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a>    - [INDICA SE SE PODE FACER INTERDISCIPLINAR, INTEGRANDO MÁIS DUNHA MATERIA.]
+</span><span id="__span-3-38"><a id="__codelineno-3-38" name="__codelineno-3-38" href="#__codelineno-3-38"></a>
+</span><span id="__span-3-39"><a id="__codelineno-3-39" name="__codelineno-3-39" href="#__codelineno-3-39"></a>[PODES LIMITAR A DURACIÓN ESTIMADA DO PROXECTO (POR EXEMPLO: 4 SESIÓNS DE 50 MIN).]
+</span><span id="__span-3-40"><a id="__codelineno-3-40" name="__codelineno-3-40" href="#__codelineno-3-40"></a>
+</span><span id="__span-3-41"><a id="__codelineno-3-41" name="__codelineno-3-41" href="#__codelineno-3-41"></a>[INDICA O FORMATO DE SAÍDA PREFERIDO:  
+</span><span id="__span-3-42"><a id="__codelineno-3-42" name="__codelineno-3-42" href="#__codelineno-3-42"></a>    - DOCUMENTO ESTRUTURADO
+</span><span id="__span-3-43"><a id="__codelineno-3-43" name="__codelineno-3-43" href="#__codelineno-3-43"></a>    - TÁBOA PASO A PASO
+</span><span id="__span-3-44"><a id="__codelineno-3-44" name="__codelineno-3-44" href="#__codelineno-3-44"></a>    - TEXTO CON EPÍGRAFES POR FASES]
+</span></code></pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Prompt 5. Xeración de exercicios graduados</p>
+<p><em>Este prompt permite crear series de exercicios adaptados a distintos niveis de competencia, útiles para reforzo, avaliación, atención á diversidade e práctica autónoma. A estrutura permite diferenciar entre alumnado que precisa consolidar, aplicar ou ampliar contidos.</em></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Actúa como docente de &lt;MATERIA&gt; no nivel educativo de &lt;NIVEL&gt;, cun enfoque pedagóxico adaptado á diversidade do alumnado e ao currículo da LOMLOE.
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>Xera unha serie de exercicios graduados sobre o contido &lt;CONTIDO OU TEMA&gt;, organizados en tres niveis de dificultade:
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    1. Nivel básico: exercicios accesibles para todo o alumnado, centrados na comprensión elemental ou aplicación directa dos contidos.
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    2. Nivel intermedio: exercicios que requiran aplicar o aprendido en novas situacións ou combinar conceptos.
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>    3. Nivel avanzado: exercicios máis complexos que impliquen reflexión, resolución de problemas, análise ou xeneralización.
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>Para cada nivel, inclúe:
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>    - Unha serie de exercicios variados (mínimo 3 por nivel).
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>    - Instrucións claras e contextualizadas para o alumnado.
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>    - Pistas ou exemplos parciais (sen incluír a solución completa).
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>    - Criterios de corrección orientativos ou criterios clave a ter en conta na avaliación das respostas.
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>Requisitos:
+</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a>    - Non inclúas a resolución completa dos exercicios, só pistas ou modelos parciais cando sexa necesario.
+</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>    - Os exercicios deben evitar o copia-pega desde ferramentas de IA: deben requirir pensamento propio, análise ou expresión.
+</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a>
+</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a>[INDICA SE PREFIRES UNHA VERSIÓN IMPRIMIBLE OU DIXITAL (FORMATO PDF, EDITABLE, GOOGLE DOCS...)]
+</span><span id="__span-4-21"><a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a>
+</span><span id="__span-4-22"><a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a>[PODES SOLICITAR QUE SÓ SE INCLÚAN EXEMPLOS RESOLTOS NO NIVEL BÁSICO.]
+</span><span id="__span-4-23"><a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a>
+</span><span id="__span-4-24"><a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a>[PODES ESPECIFICAR O TIPO DE EXERCICIO DESEXADO (ESCOITA, REDACCIÓN, CÁLCULO, ANÁLISE DE TEXTO, ETC.)]
+</span><span id="__span-4-25"><a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a>
+</span><span id="__span-4-26"><a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a>[SE O DESEXAS, ACHEGA OS CRITERIOS DE AVALIACIÓN OFICIAIS OU ASPECTOS CLAVE DO CURRÍCULO PARA MAIOR PRECISIÓN.]
+</span></code></pre></div>
+</div>
+<hr />
+<h2 id="bloque-c-adaptacion-de-materiais-e-atencion-a-diversidade-neae">BLOQUE C - Adaptación de materiais e atención á diversidade (NEAE)<a class="headerlink" href="#bloque-c-adaptacion-de-materiais-e-atencion-a-diversidade-neae" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Prompt 6. Adaptación de material a distintos niveis</p>
+<p><em>Este prompt permite modificar un mesmo contido didáctico para facelo accesible a alumnado con distintos niveis de competencia, sen perder os obxectivos comúns. É especialmente útil para reforzo, ampliación e atención á diversidade en aulas heteroxéneas.</em></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>Actúa como docente especializado en &lt;MATERIA&gt; no nivel educativo de &lt;NIVEL&gt;, cun enfoque inclusivo e competencial segundo a LOMLOE.
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>Adapta o seguinte material didáctico para tres niveis de dificultade:
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    - Versión simplificada (para alumnado con dificultades de comprensión ou ritmos máis lentos).
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>    - Versión estándar (para a maioría do alumnado).
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    - Versión avanzada (para alumnado que precisa reto ou ampliación).
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>Mantén en todas as versións os mesmos obxectivos de aprendizaxe, pero adapta a linguaxe, a extensión, a estrutura ou o nivel de apoio segundo o caso.
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>Material a adaptar:
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>    - [PEGA AQUÍ O TEXTO, EXERCICIO OU MATERIAL DIDÁCTICO]
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>Inclúe os seguintes elementos na resposta:
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>1. As tres versións do material adaptado, identificadas claramente.
+</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>
+</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>2. Diferenzas principais entre versións, explicadas nun pequeno cadro comparativo (linguaxe, apoio visual, número de tarefas, autonomía requirida...).
+</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>
+</span><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>3. Indicación do tipo de alumnado ao que vai dirixida cada versión.
+</span><span id="__span-5-19"><a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a>
+</span><span id="__span-5-20"><a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>4. [LIMITA A EXTENSIÓN DO MATERIAL ADAPTADO (EXEMPLO: MÁXIMO 150 PALABRAS POR VERSIÓN OU 1 PÁXINA NO TOTAL).]
+</span><span id="__span-5-21"><a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a>
+</span><span id="__span-5-22"><a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a>5. [SE PROCEDE, ADAPTA TAMÉN AS INSTRUCIÓNS, OS EXEMPLOS OU O SOPORTE (GRÁFICO, TEXTUAL, AUDIOVISUAL...).]
+</span><span id="__span-5-23"><a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a>
+</span><span id="__span-5-24"><a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a>Asegúrate de que as adaptacións sexan razoables, realistas e aplicables nunha aula ordinaria, sen recorrer a recursos extraordinarios.
+</span></code></pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Prompt 7. Adaptación de actividades para alumnado con NEAE</p>
+<p><em>Este prompt permite xerar adaptacións metodolóxicas e de acceso para que todo o alumnado poida participar nunha actividade sen modificar os obxectivos curriculares. Resulta útil para deseñar actividades inclusivas en aulas con diversidade, sempre contrastando co equipo de orientación.</em></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>Actúa como especialista en atención á diversidade e adaptacións educativas. A túa función é axudar a docentes a axustar actividades mantendo os obxectivos de aprendizaxe e promovendo unha aula inclusiva.
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>Propón adaptacións razoables e aplicables nunha aula ordinaria para a seguinte actividade:
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>&lt;DESCRICIÓN DA ACTIVIDADE&gt;, pensando en alumnado con &lt;NEAE OU PERFIL XERAL&gt;
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>(exemplos: dificultades específicas de aprendizaxe, TDAH, TEA, dislexia, dificultades cognitivas leves...).
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>As adaptacións deben permitir que o alumnado participe da actividade sen modificar os obxectivos curriculares nin substituír a intervención profesional docente.
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>Inclúe os seguintes elementos:
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>1. Tipo de adaptacións propostas
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>    - Diferencia entre:
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>        - Adaptacións metodolóxicas (forma de explicar, estruturación, agrupamentos, instrucións guiadas...).
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>        - Adaptacións de acceso (formato, presentación, recursos de apoio, tempo adicional...).
+</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>
+</span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>2. Axustes no formato da tarefa
+</span><span id="__span-6-16"><a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a>    - Exemplo: lectura en voz alta, uso de pictogramas, versión simplificada do texto, presentación en PowerPoint, etc.
+</span><span id="__span-6-17"><a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a>
+</span><span id="__span-6-18"><a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a>3. Axustes na carga cognitiva
+</span><span id="__span-6-19"><a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a>    - Exemplo: reducir o número de pasos, dividir a tarefa en fases, anticipar a estrutura, apoiar con esquemas visuais.
+</span><span id="__span-6-20"><a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a>
+</span><span id="__span-6-21"><a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a>4. Axustes no tempo e apoio
+</span><span id="__span-6-22"><a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a>    -Exemplo: tempo adicional, pausa entre fases, apoio de compañeiro/a, uso de materiais manipulativos.
+</span><span id="__span-6-23"><a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a>
+</span><span id="__span-6-24"><a id="__codelineno-6-24" name="__codelineno-6-24" href="#__codelineno-6-24"></a>5. Contexto realista de aula ordinaria
+</span><span id="__span-6-25"><a id="__codelineno-6-25" name="__codelineno-6-25" href="#__codelineno-6-25"></a>    - Propón só medidas viables sen depender de recursos extraordinarios.
+</span><span id="__span-6-26"><a id="__codelineno-6-26" name="__codelineno-6-26" href="#__codelineno-6-26"></a>    - Non inclúas modificacións curriculares significativas nin cambios que requiran un PI específico.
+</span><span id="__span-6-27"><a id="__codelineno-6-27" name="__codelineno-6-27" href="#__codelineno-6-27"></a>
+</span><span id="__span-6-28"><a id="__codelineno-6-28" name="__codelineno-6-28" href="#__codelineno-6-28"></a>[INDICA SE HAI RECURSOS DISPOÑIBLES NO CENTRO (PT, AL, MATERIAIS ADAPTADOS, TECNOLOXÍA ESPECÍFICA...).]
+</span><span id="__span-6-29"><a id="__codelineno-6-29" name="__codelineno-6-29" href="#__codelineno-6-29"></a>
+</span><span id="__span-6-30"><a id="__codelineno-6-30" name="__codelineno-6-30" href="#__codelineno-6-30"></a>[PODES SOLICITAR QUE AS ADAPTACIÓNS SE CENTREN NUN ASPECTO CONCRETO: COMPRENSIÓN LECTORA, EXPRESIÓN ESCRITA, ATENCIÓN, ETC.]
+</span><span id="__span-6-31"><a id="__codelineno-6-31" name="__codelineno-6-31" href="#__codelineno-6-31"></a>
+</span><span id="__span-6-32"><a id="__codelineno-6-32" name="__codelineno-6-32" href="#__codelineno-6-32"></a>[OPCIONAL: INDICA SE A ACTIVIDADE REQUIRE UN TRABALLO INDIVIDUAL OU EN GRUPO.]
+</span></code></pre></div>
+</div>
+<hr />
+<h2 id="bloque-d-prompts-para-deseno-de-rubricas-e-avaliacion-formativa">BLOQUE D – Prompts para deseño de rúbricas e avaliación formativa.<a class="headerlink" href="#bloque-d-prompts-para-deseno-de-rubricas-e-avaliacion-formativa" title="Permanent link">&para;</a></h2>
+<p><em>Modelos de prompts para apoiar ao profesorado no deseño de instrumentos de avaliación coherentes</em><em>.</em></p>
+<div class="admonition note">
+<p class="admonition-title">Prompt 8. Rúbrica competencial centrada no proceso</p>
+<p><em>Este prompt permite xerar rúbricas completas que avalíen tanto o camiño percorrido polo alumnado como o resultado final. Son especialmente útiles en tarefas competenciais, proxectos ABP, retos ou situacións de aprendizaxe, incluíndo o uso responsable da IA.</em></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>Actúa como experto en avaliación competencial segundo a LOMLOE e a normativa galega. Deseña unha rúbrica de avaliación para a seguinte tarefa ou proxecto:
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>    - Tarefa ou proxecto: &lt;DESCRICIÓN DA TAREFA OU SITUACIÓN DE APRENDIZAXE&gt;
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>    - Materia: &lt;MATERIA&gt;
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>    - Nivel educativo: &lt;NIVEL EDUCATIVO&gt;
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>A rúbrica debe servir para avaliar tanto:
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>    - O proceso de traballo do alumnado (planificación, toma de decisións, autonomía, revisión e mellora, uso do tempo…).
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>    - O produto final (calidade, adecuación, presentación, creatividade…).
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>Inclúe os seguintes elementos:
+</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>1. Criterios de avaliación, tanto de proceso como de produto, aliñados co currículo oficial da materia e nivel.
+</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>
+</span><span id="__span-7-14"><a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>2. Descritores claros e observables, para cada criterio, formulados en 4 niveis de logro progresivos, evitando termos ambiguos como “axeitado” ou “correcto”.
+</span><span id="__span-7-15"><a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a>
+</span><span id="__span-7-16"><a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a>3. Indicadores específicos de evidencias que o docente debe observar en cada nivel.
+</span><span id="__span-7-17"><a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a>
+</span><span id="__span-7-18"><a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a>4. Distinción entre traballo individual e traballo en grupo, se a tarefa o require.
+</span><span id="__span-7-19"><a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a>
+</span><span id="__span-7-20"><a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a>5. Criterio específico sobre uso responsable da IA, se procede: Valorando aspectos como uso ético, citación das fontes, integración crítica da información xerada por IA.
+</span><span id="__span-7-21"><a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a>
+</span><span id="__span-7-22"><a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a>6. Formato de saída en táboa, clara e reutilizable.
+</span><span id="__span-7-23"><a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a>
+</span><span id="__span-7-24"><a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a>[PODES PEDIR QUE SE REDUZA O NÚMERO DE CRITERIOS SE A TAREFA É SINXELA.]
+</span><span id="__span-7-25"><a id="__codelineno-7-25" name="__codelineno-7-25" href="#__codelineno-7-25"></a>
+</span><span id="__span-7-26"><a id="__codelineno-7-26" name="__codelineno-7-26" href="#__codelineno-7-26"></a>[SE O NIVEL EDUCATIVO O REQUIRE, ADAPTA O NÚMERO DE NIVEIS (POR EXEMPLO: 3 NIVEIS PARA 1º CICLO DE PRIMARIA).]
+</span><span id="__span-7-27"><a id="__codelineno-7-27" name="__codelineno-7-27" href="#__codelineno-7-27"></a>
+</span><span id="__span-7-28"><a id="__codelineno-7-28" name="__codelineno-7-28" href="#__codelineno-7-28"></a>[PODES INDICAR SE QUERES QUE A RÚBRICA INCLÚA COMENTARIOS EXEMPLARES OU EXEMPLOS REAIS DE PRODUCIÓNS DO ALUMNADO.]
+</span><span id="__span-7-29"><a id="__codelineno-7-29" name="__codelineno-7-29" href="#__codelineno-7-29"></a>
+</span><span id="__span-7-30"><a id="__codelineno-7-30" name="__codelineno-7-30" href="#__codelineno-7-30"></a>[SE PRECISAS ADAPTAR PARA AULA VIRTUAL, SOLICITA VERSIÓN EDITABLE EN GOOGLE DOCS, MOODLE OU PDF.]
+</span></code></pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Prompt 9. Instrumento de avaliación formativa con feedback</p>
+<p><em>Este prompt permite xerar ferramentas de avaliación orientadas ao proceso, sen cualificacións numéricas. Son útiles para revisións intermedias, autoavaliacións, coavaliacións ou acompañamento docente en tarefas complexas.</em></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>Actúa como docente con experiencia en avaliación formativa e retroalimentación cualitativa, aliñado coa LOMLOE. Deseña un instrumento de avaliación formativa para a seguinte actividade: &lt;DESCRICIÓN DA ACTIVIDADE OU TAREFA&gt;.
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>O instrumento debe permitir facer seguimento do proceso de aprendizaxe, favorecer a autorreflexión e orientar a mellora. Debe estar pensado para ser usado por &lt;DOCENTE / ALUMNADO / AMBOS&gt;.
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>Inclúe os seguintes elementos:
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>1. Preguntas de reflexión sobre o proceso
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>    - Formula de 3 a 5 preguntas abertas que axuden ao alumnado a analizar o seu propio proceso: dificultades, estratexias empregadas, cambios feitos, aprendizaxes identificadas...
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>2. Indicadores de progreso claros e comprensibles
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>    - Lista de aspectos clave a observar na tarefa ou proceso (ex: planificación, comprensión, creatividade, uso de fontes…).        
+</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>    - Indicadores redactados en primeira persoa cando sexa para auto/coavaliación.
+</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>
+</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>3. Espazo para feedback cualitativo
+</span><span id="__span-8-14"><a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>    - Zona onde o docente, un compañeiro ou o propio alumno/a poida facer observacións construtivas sobre puntos fortes e aspectos a mellorar.
+</span><span id="__span-8-15"><a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a>
+</span><span id="__span-8-16"><a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a>4. Propostas de mellora
+</span><span id="__span-8-17"><a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a>    - Recomendacións específicas para avanzar no seguinte paso do proceso:
+</span><span id="__span-8-18"><a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a>        - Que pode facer mellor.
+</span><span id="__span-8-19"><a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a>        - Que pode intentar distinto.
+</span><span id="__span-8-20"><a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a>        - En que debe seguir traballando.
+</span><span id="__span-8-21"><a id="__codelineno-8-21" name="__codelineno-8-21" href="#__codelineno-8-21"></a>
+</span><span id="__span-8-22"><a id="__codelineno-8-22" name="__codelineno-8-22" href="#__codelineno-8-22"></a>5. Formato de saída en táboa ou folla editable, segundo o uso previsto.
+</span><span id="__span-8-23"><a id="__codelineno-8-23" name="__codelineno-8-23" href="#__codelineno-8-23"></a>
+</span><span id="__span-8-24"><a id="__codelineno-8-24" name="__codelineno-8-24" href="#__codelineno-8-24"></a>Requisitos:
+</span><span id="__span-8-25"><a id="__codelineno-8-25" name="__codelineno-8-25" href="#__codelineno-8-25"></a>    - Non debe incluír cualificación numérica nin porcentaxes.
+</span><span id="__span-8-26"><a id="__codelineno-8-26" name="__codelineno-8-26" href="#__codelineno-8-26"></a>    - A linguaxe debe estar adaptada á etapa educativa correspondente.
+</span><span id="__span-8-27"><a id="__codelineno-8-27" name="__codelineno-8-27" href="#__codelineno-8-27"></a>    - O foco debe estar na mellora continua, non no control.
+</span><span id="__span-8-28"><a id="__codelineno-8-28" name="__codelineno-8-28" href="#__codelineno-8-28"></a>
+</span><span id="__span-8-29"><a id="__codelineno-8-29" name="__codelineno-8-29" href="#__codelineno-8-29"></a>[PODES SOLICITAR VERSIÓN ADAPTADA A ETAPAS INICIAIS CON LINGUAXE SIMPLIFICADA.]
+</span><span id="__span-8-30"><a id="__codelineno-8-30" name="__codelineno-8-30" href="#__codelineno-8-30"></a>
+</span><span id="__span-8-31"><a id="__codelineno-8-31" name="__codelineno-8-31" href="#__codelineno-8-31"></a>[INDICA SE A FERRAMENTA VAI EMPREGARSE UNHA SOA VEZ (P. EX., REVISIÓN DUN BORRADOR) OU VARIAS VECES AO LONGO DUNHA UNIDADE.]
+</span><span id="__span-8-32"><a id="__codelineno-8-32" name="__codelineno-8-32" href="#__codelineno-8-32"></a>
+</span><span id="__span-8-33"><a id="__codelineno-8-33" name="__codelineno-8-33" href="#__codelineno-8-33"></a>[PIDE EXEMPLOS DE RESPOSTAS POSIBLES OU BOAS PRÁCTICAS DE FEEDBACK.]
+</span></code></pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Prompt 10. Guía de defensa oral ou reflexión final</p>
+<p><em>Este prompt permite xerar un conxunto de preguntas abertas para que o alumnado reflexione sobre o seu proceso de aprendizaxe. Resulta útil en presentacións, proxectos, tarefas finais ou calquera situación onde se avalíe tanto a autoría como a comprensión e a transferencia.</em></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>Actúa como docente avaliador cun enfoque formativo e competencial. Elabora unha guía de preguntas para unha defensa oral ou reflexión final sobre a seguinte tarefa ou proxecto:
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>    - Tarefa ou proxecto: &lt;DESCRICIÓN DA TAREFA OU SITUACIÓN DE APRENDIZAXE&gt;
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>    - Materia: &lt;MATERIA&gt;
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>    - Nivel educativo: &lt;NIVEL EDUCATIVO&gt;
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>    - Tipo de defensa: &lt;INDIVIDUAL / GRUPAL&gt;
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>O obxectivo é comprobar a comprensión profunda do traballo realizado, a toma de decisións, o grao de implicación e a transferencia do aprendido a outros contextos. A guía debe permitir unha avaliación formativa e unha posible verificación da autoría do traballo.
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>Inclúe:
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>1. Preguntas abertas e progresivas, organizadas por bloques:
+</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>    - Comprensión dos contidos traballados.
+</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>    - Xustificación das decisións tomadas durante o proceso.
+</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>    - Reflexión sobre as dificultades atopadas e como foron superadas.
+</span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>    - Aplicación do aprendido a novos contextos ou situacións reais.
+</span><span id="__span-9-16"><a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a>    - Uso da IA no proceso: se foi empregada, como, con que criterio, e que parte do traballo é persoal.
+</span><span id="__span-9-17"><a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>
+</span><span id="__span-9-18"><a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a>2. Linguaxe adaptada ao nivel educativo, clara e accesible.
+</span><span id="__span-9-19"><a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a>
+</span><span id="__span-9-20"><a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a>3. [INDICA O NÚMERO MÁXIMO DE PREGUNTAS, SEGUNDO O TEMPO DISPOÑIBLE (EX: 5 PREGUNTAS PARA 10 MINUTOS).]
+</span><span id="__span-9-21"><a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a>
+</span><span id="__span-9-22"><a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a>4. [SE A DEFENSA É GRUPAL, INCLÚE PREGUNTAS PARA REPARTIR ROLES OU ASEGURAR A PARTICIPACIÓN DE TODAS AS PERSOAS.]
+</span><span id="__span-9-23"><a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a>
+</span><span id="__span-9-24"><a id="__codelineno-9-24" name="__codelineno-9-24" href="#__codelineno-9-24"></a>5. [PODES PEDIR QUE SE ENGADAN RÚBRICAS OU CRITERIOS DE AVALIACIÓN DA PRESENTACIÓN ORAL.]
+</span><span id="__span-9-25"><a id="__codelineno-9-25" name="__codelineno-9-25" href="#__codelineno-9-25"></a>
+</span><span id="__span-9-26"><a id="__codelineno-9-26" name="__codelineno-9-26" href="#__codelineno-9-26"></a>
+</span><span id="__span-9-27"><a id="__codelineno-9-27" name="__codelineno-9-27" href="#__codelineno-9-27"></a>A guía debe evitar preguntas pechadas ou memorísticas, e centrarse en evidencias de reflexión, comprensión, análise e toma de decisións.
+</span></code></pre></div>
+</div>
+<hr />
+<h2 id="bloque-e-prompts-para-coordinacion-e-traballo-en-equipo">BLOQUE E - Prompts para coordinación e traballo en equipo<a class="headerlink" href="#bloque-e-prompts-para-coordinacion-e-traballo-en-equipo" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Prompt 11. Apoio á coordinación de departamento ou ciclo</p>
+<p><em>Este prompt permite xerar propostas iniciais para organizar o traballo dun equipo docente. É útil en reunións de coordinación, revisión de programacións ou deseño de liñas comúns, sempre deixando espazo para o acordo colectivo.</em></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>Actúa como asistente de coordinación pedagóxica, cun coñecemento actualizado da LOMLOE e da normativa galega. Axuda a organizar e estruturar o traballo dun departamento ou equipo docente de &lt;MATERIA OU ETAPA EDUCATIVA&gt;, tendo en conta o seguinte contexto:
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>    - Número de docentes implicados: &lt;INDICA CANTIDADE OU PERFÍS&gt;
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>    - Tipo de centro e situación: &lt;PÚBLICO / CONCERTADO / CONTORNO RURAL / URBANO / OUTRO&gt;
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>Elabora unha proposta inicial que sirva de base para o debate e a toma de decisións compartida durante unha reunión de coordinación. A proposta debe incluír:
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>1. Obxectivos comúns para o curso
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>    - Propón de 3 a 5 obxectivos xerais (didácticos, organizativos ou metodolóxicos), adaptados á realidade do equipo.
+</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>
+</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>2. Criterios compartidos de metodoloxía e avaliación
+</span><span id="__span-10-12"><a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>    - Liñas comúns sobre metodoloxías activas, inclusión, uso de rúbricas, avaliación formativa...
+</span><span id="__span-10-13"><a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a>    - Indica espazos abertos a decisións colectivas (non peches o acordo).
+</span><span id="__span-10-14"><a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a>
+</span><span id="__span-10-15"><a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a>3. Propostas para o uso coherente da intelixencia artificial
+</span><span id="__span-10-16"><a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a>    - Posibles acordos sobre cando é adecuado o uso de IA, tanto por parte do profesorado como do alumnado.
+</span><span id="__span-10-17"><a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a>    - Suxestións de ferramentas útiles para programación, avaliación ou creación de recursos.
+</span><span id="__span-10-18"><a id="__codelineno-10-18" name="__codelineno-10-18" href="#__codelineno-10-18"></a>
+</span><span id="__span-10-19"><a id="__codelineno-10-19" name="__codelineno-10-19" href="#__codelineno-10-19"></a>4. Ideas de tarefas, proxectos ou situacións de aprendizaxe comúns
+</span><span id="__span-10-20"><a id="__codelineno-10-20" name="__codelineno-10-20" href="#__codelineno-10-20"></a>    - Exemplos de actividades ou unidades que poderían ser compartidas por varios docentes ou niveis.
+</span><span id="__span-10-21"><a id="__codelineno-10-21" name="__codelineno-10-21" href="#__codelineno-10-21"></a>
+</span><span id="__span-10-22"><a id="__codelineno-10-22" name="__codelineno-10-22" href="#__codelineno-10-22"></a>5. Formato claro e visual
+</span><span id="__span-10-23"><a id="__codelineno-10-23" name="__codelineno-10-23" href="#__codelineno-10-23"></a>    - Presenta a proposta en formato esquemático ou táboa, lista para ser revisada e completada nunha reunión.
+</span><span id="__span-10-24"><a id="__codelineno-10-24" name="__codelineno-10-24" href="#__codelineno-10-24"></a>
+</span><span id="__span-10-25"><a id="__codelineno-10-25" name="__codelineno-10-25" href="#__codelineno-10-25"></a>Requisitos:
+</span><span id="__span-10-26"><a id="__codelineno-10-26" name="__codelineno-10-26" href="#__codelineno-10-26"></a>- A proposta debe ser flexible, sen pechar decisións, para permitir o debate e a adaptación.
+</span><span id="__span-10-27"><a id="__codelineno-10-27" name="__codelineno-10-27" href="#__codelineno-10-27"></a>- Emprega unha linguaxe profesional, clara e neutra.
+</span><span id="__span-10-28"><a id="__codelineno-10-28" name="__codelineno-10-28" href="#__codelineno-10-28"></a>- Evita dar por supostas medidas que deben ser consensuadas.
+</span><span id="__span-10-29"><a id="__codelineno-10-29" name="__codelineno-10-29" href="#__codelineno-10-29"></a>
+</span><span id="__span-10-30"><a id="__codelineno-10-30" name="__codelineno-10-30" href="#__codelineno-10-30"></a>[PODES SOLICITAR QUE A PROPOSTA ESTEA ESTRUTURADA EN TORNO AO CALENDARIO ESCOLAR (1º TRIMESTRE, 2º, 3º).]
+</span><span id="__span-10-31"><a id="__codelineno-10-31" name="__codelineno-10-31" href="#__codelineno-10-31"></a>
+</span><span id="__span-10-32"><a id="__codelineno-10-32" name="__codelineno-10-32" href="#__codelineno-10-32"></a>[PODES PEDIR QUE SE INCLÚAN SUXESTIÓNS PARA A COORDINACIÓN INTERETAPAS OU INTERDISCIPLINAR.]
+</span><span id="__span-10-33"><a id="__codelineno-10-33" name="__codelineno-10-33" href="#__codelineno-10-33"></a>
+</span><span id="__span-10-34"><a id="__codelineno-10-34" name="__codelineno-10-34" href="#__codelineno-10-34"></a>[SE O EQUIPO É NOVO OU POUCO COHESIONADO, SOLICITA QUE SE ENGADAN RECOMENDACIÓNS PARA ESTABLECER ACORDOS MÍNIMOS.]
+</span></code></pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Prompt 12. Preparación de reunións e actas</p>
+<p><em>Este prompt permite elaborar documentos formais de coordinación docente, tanto antes dunha reunión (orde do día) como despois (resumo ou acta). É útil para traballo de equipo, seguimento de acordos e documentación oficial.</em></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>Actúa como apoio á organización interna dun centro educativo. A partir da seguinte información ou puntos tratados, axuda a elaborar un documento oficial de reunión, segundo o seu momento e finalidade:
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>    - Información achegada: &lt;PEGA AQUÍ AS NOTAS, TEMAS OU ACORDOS&gt;
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>    - Tipo de documento: &lt;ORDE DO DÍA / RESUMO DE ACORDOS / ACTA DE REUNIÓN&gt;
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>    - Tipo de reunión: &lt;EQUIPO DOCENTE / DEPARTAMENTO / CICLO / TITORÍA / OUTRO&gt;
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>    - Nivel educativo ou etapa:&lt;PRIMARIA / ESO / BACHARELATO / FP / OUTRO&gt;
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>    - Versión: &lt;BORRADOR / VERSIÓN FINAL&gt;
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>Elabora o documento solicitado co seguinte enfoque:
+</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>
+</span><span id="__span-11-10"><a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a>1. Se é unha orde do día (antes da reunión):
+</span><span id="__span-11-11"><a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a>    - Presenta unha estrutura clara e numerada, cos temas a tratar e, se procede, o tempo estimado para cada punto.
+</span><span id="__span-11-12"><a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a>    - Engade un espazo para “roldas abertas” ou “preguntas e propostas” ao final.
+</span><span id="__span-11-13"><a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a>
+</span><span id="__span-11-14"><a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a>2. Se é un resumo de acordos ou acta posterior:
+</span><span id="__span-11-15"><a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a>    - Resume os puntos tratados con claridade e obxectividade.
+</span><span id="__span-11-16"><a id="__codelineno-11-16" name="__codelineno-11-16" href="#__codelineno-11-16"></a>    - Enumera os acordos adoptados, as tarefas asignadas e as persoas responsables.
+</span><span id="__span-11-17"><a id="__codelineno-11-17" name="__codelineno-11-17" href="#__codelineno-11-17"></a>    - Se procede, indica o prazo previsto para cada tarefa.
+</span><span id="__span-11-18"><a id="__codelineno-11-18" name="__codelineno-11-18" href="#__codelineno-11-18"></a>    - Usa unha linguaxe formal, precisa e coherente coa documentación oficial do centro.
+</span><span id="__span-11-19"><a id="__codelineno-11-19" name="__codelineno-11-19" href="#__codelineno-11-19"></a>
+</span><span id="__span-11-20"><a id="__codelineno-11-20" name="__codelineno-11-20" href="#__codelineno-11-20"></a>[INDICA SE QUERES QUE O DOCUMENTO SEXA EDITABLE EN FORMATO .DOCX, .ODT OU COMPATIBLE CON GOOGLE DOCS.]
+</span><span id="__span-11-21"><a id="__codelineno-11-21" name="__codelineno-11-21" href="#__codelineno-11-21"></a>
+</span><span id="__span-11-22"><a id="__codelineno-11-22" name="__codelineno-11-22" href="#__codelineno-11-22"></a>[PODES PEDIR QUE O ESTILO SEXA MÁIS ESQUEMÁTICO (VIÑETAS) OU MÁIS TEXTUAL E NARRATIVO.]
+</span><span id="__span-11-23"><a id="__codelineno-11-23" name="__codelineno-11-23" href="#__codelineno-11-23"></a>
+</span><span id="__span-11-24"><a id="__codelineno-11-24" name="__codelineno-11-24" href="#__codelineno-11-24"></a>[OPCIONAL: ENGADE UN ESPAZO FINAL PARA SINATURAS OU VALIDACIÓN DA XEFATURA DE DEPARTAMENTO/EQUIPO.]
+</span></code></pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Prompt 13. Apoio á elaboración de documentos de centro</p>
+<p><em>Este prompt permite xerar borradores estruturados e profesionais de documentos oficiais dun centro educativo (proxecto educativo, políticas de IA, plans, memorias...). O modelo xerado serve como base para revisión, debate e adaptación por parte dos equipos directivos e órganos colexiados.</em></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>Actúa como apoio á redacción institucional dun centro educativo público. Elabora un borrador inicial e estruturado do seguinte documento oficial:
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>    - Tipo de documento: &lt;INDICA O DOCUMENTO: Proxecto Educativo, Plan de Convivencia, Política de uso da IA, Memoria Anual, etc.&gt;
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>    - Etapa/nivel: &lt;INFANTIL / PRIMARIA / ESO / BACHARELATO / FP / CENTRO INTEGRADO&gt;
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>    - Nivel de detalle desexado:&lt;ESQUEMA XERAL / REDACCIÓN COMPLETA / VERSIÓN SINTÉTICA PARA DEBATE&gt;
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>O borrador debe:
+</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>1. Estar aliñado con marco legal e normativo vixente, tanto estatal (LOMLOE) como autonómico (normativa galega específica).
+</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>
+</span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>2. Empregar unha linguaxe institucional, clara, neutra e profesional.
+</span><span id="__span-12-11"><a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>
+</span><span id="__span-12-12"><a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>3. Presentar unha estrutura lóxica e coherente, con epígrafes e subapartados numerados.
+</span><span id="__span-12-13"><a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a>
+</span><span id="__span-12-14"><a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a>4. Ser apto para revisión e adaptación posterior polo equipo directivo, claustro ou consello escolar.
+</span><span id="__span-12-15"><a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a>
+</span><span id="__span-12-16"><a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a>5. Non incluír datos identificativos do centro, nin referencias a persoas concretas ou localizacións específicas.
+</span><span id="__span-12-17"><a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a>
+</span><span id="__span-12-18"><a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a>[PODES INDICAR APARTADOS OBRIGATORIOS SEGUNDO NORMATIVA ESPECÍFICA (POR EXEMPLO: OBXECTIVOS XERAIS, PRINCIPIOS PEDAGÓXICOS, MEDIDAS DE INCLUSIÓN, ATENCIÓN Á DIVERSIDADE, USO DA IA, COORDINACIÓN ENTRE ETAPAS...).]
+</span><span id="__span-12-19"><a id="__codelineno-12-19" name="__codelineno-12-19" href="#__codelineno-12-19"></a>
+</span><span id="__span-12-20"><a id="__codelineno-12-20" name="__codelineno-12-20" href="#__codelineno-12-20"></a>[INDICA SE O DOCUMENTO ESTÁ PENSADO PARA O CURSO ACTUAL OU COMO MARCO PLURIANUAL.]
+</span><span id="__span-12-21"><a id="__codelineno-12-21" name="__codelineno-12-21" href="#__codelineno-12-21"></a>
+</span><span id="__span-12-22"><a id="__codelineno-12-22" name="__codelineno-12-22" href="#__codelineno-12-22"></a>[PODES SOLICITAR QUE SE ENGADAN EXEMPLOS OU FÓRMULAS TIPO ADAPTABLES (EX: “O CENTRO PROMOVERÁ…” “A COORDINACIÓN HORIZONTAL REALIZARASE MEDIANTE…”).]
+</span><span id="__span-12-23"><a id="__codelineno-12-23" name="__codelineno-12-23" href="#__codelineno-12-23"></a>
+</span><span id="__span-12-24"><a id="__codelineno-12-24" name="__codelineno-12-24" href="#__codelineno-12-24"></a>[SE É UNHA REVISIÓN DUN DOCUMENTO XA EXISTENTE, PODES PEGAR FRAGMENTOS CONCRETOS PARA REFORMULAR OU ACTUALIZAR.]
+</span></code></pre></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver ao principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pé" >
+        
+          
+          <a href="anexo1.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Anexo 1">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Anexo 1
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="anexo3.html" class="md-footer__link md-footer__link--next" aria-label="Seguinte: Anexo 3">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Seguinte
+              </span>
+              <div class="md-ellipsis">
+                Anexo 3
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2025 · Javier Feijóo López · Guía práctica sobre o uso educativo da Intelixencia Artificial · Contido baixo licenza <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.gl" target="_blank">
+  CC BY-NC-SA 4.0
+</a> · <a href="/about/autor.html">Sobre o autor</a>
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.instant", "navigation.sections", "navigation.expand", "navigation.top", "toc.integrate", "content.code.copy", "navigation.footer"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado no cortapapeis", "clipboard.copy": "Copiar no cortapapeis", "search.result.more.one": "1 m\u00e1is nesta p\u00e1xina", "search.result.more.other": "# m\u00e1is nesta p\u00e1xina", "search.result.none": "Sen resultados", "search.result.one": "1 resultado atopado", "search.result.other": "# resultados atopados", "search.result.placeholder": "Insira un termo", "search.result.term.missing": "Falta", "select.version": "Seleccionar version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

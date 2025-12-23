@@ -1,0 +1,6 @@
+/* Forzar salto de línea en bloques de código */
+.md-typeset pre code {
+  white-space: pre-wrap;      /* permite wrap */
+  word-break: break-word;     /* rompe palabras largas */
+  overflow-x: hidden;         /* elimina scroll horizontal */
+}

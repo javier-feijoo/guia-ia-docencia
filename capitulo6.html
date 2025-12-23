@@ -1,0 +1,1700 @@
+
+<!doctype html>
+<html lang="gl" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Guía educativa para docentes para o uso da IA a nivel profesional e educativo.">
+      
+      
+        <meta name="author" content="Javier Feijóo López">
+      
+      
+        <link rel="canonical" href="https://javier-feijoo.github.io/guia-ia-docencia/capitulo6.html">
+      
+      
+        <link rel="prev" href="capitulo5.html">
+      
+      
+        <link rel="next" href="capitulo7.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Capítulo 6 - O uso educativo da Intelixencia Artificial - Guía práctica</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="styles/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#capitulo-6-asistentes-gpt-e-axentes-personalizados-para-o-profesorado" class="md-skip">
+          Ir ao contido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeceira">
+    <a href="index.html" title="O uso educativo da Intelixencia Artificial - Guía práctica" class="md-header__button md-logo" aria-label="O uso educativo da Intelixencia Artificial - Guía práctica" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            O uso educativo da Intelixencia Artificial - Guía práctica
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Capítulo 6
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Procura" placeholder="Procura" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Procurar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando procura
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="O uso educativo da Intelixencia Artificial - Guía práctica" class="md-nav__button md-logo" aria-label="O uso educativo da Intelixencia Artificial - Guía práctica" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    O uso educativo da Intelixencia Artificial - Guía práctica
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guía
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitulo0.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 0
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitulo1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitulo2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitulo3.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitulo4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitulo5.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="capitulo6.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitulo7.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 7
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitulo8.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 8
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitulo9.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 9
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitulo10.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 10
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitulo11.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 11
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitulo12.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 12
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitulo13.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 13
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitulo14.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 14
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anexos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Anexos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="anexo1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anexo 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="anexo2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anexo 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="anexo3.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anexo 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="anexo4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anexo 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="anexo5.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anexo 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="anexo6.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anexo 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="anexo7.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anexo 7
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="anexo8.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anexo 8
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="anexo9.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glosario
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="anexo10.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recursos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="about/autor.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sobre o autor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="capitulo-6-asistentes-gpt-e-axentes-personalizados-para-o-profesorado">Capítulo 6. Asistentes, GPT e axentes personalizados para o profesorado<a class="headerlink" href="#capitulo-6-asistentes-gpt-e-axentes-personalizados-para-o-profesorado" title="Permanent link">&para;</a></h1>
+<p>Este capítulo céntrase no uso da intelixencia artificial como asistente estable ao servizo do profesorado, indo máis alá do uso puntual ou ocasional das ferramentas de IA. O obxectivo é mostrar como configurar e empregar asistentes que manteñan un contexto, unhas instrucións e uns criterios claros ao longo do tempo, facilitando o traballo docente sen substituír o criterio profesional nin a responsabilidade educativa.</p>
+<hr />
+<h1 id="que-e-un-asistente-de-ia-gpt-personalizado-ou-axente-docente">Que é un asistente de IA, GPT personalizado ou axente docente<a class="headerlink" href="#que-e-un-asistente-de-ia-gpt-personalizado-ou-axente-docente" title="Permanent link">&para;</a></h1>
+<p>Un asistente de IA é unha configuración da intelixencia artificial deseñada para apoiar tarefas concretas de maneira recorrente. A diferenza do uso puntual da IA, no que cada interacción comeza practicamente desde cero, un asistente docente mantén un marco de referencia estable: un rol definido, unhas instrucións claras e uns obxectivos pedagóxicos determinados.</p>
+<p>No contexto actual, poden identificarse tres niveis de uso da IA:</p>
+<ol>
+<li>
+<p><strong>Uso puntual da IA</strong></p>
+<p>Corresponde a interaccións illadas, nas que o docente formula unha pregunta ou solicitude concreta sen continuidade no tempo. Este uso é útil para consultas rápidas, pero require repetir instrucións e contexto en cada interacción.</p>
+</li>
+<li>
+<p><strong>Asistentes configurados</strong></p>
+<p>Son configuracións nas que se definen previamente o rol da IA, o tipo de tarefas que debe realizar e os criterios básicos de actuación. Permiten manter unha coherencia no estilo, no enfoque pedagóxico e nos resultados xerados.</p>
+</li>
+<li>
+<p><strong>Axentes con instrucións persistentes</strong></p>
+<p>Trátase de asistentes máis avanzados que manteñen instrucións, documentos de referencia e obxectivos ao longo do tempo. Estes axentes poden empregarse como apoio estable para tarefas docentes recorrentes, como planificación, creación de materiais ou coordinación.</p>
+</li>
+</ol>
+<p>No ámbito educativo, estes asistentes resultan especialmente <strong>útiles porque permiten</strong>:</p>
+<ul>
+<li>Reducir a repetición de instrucións.</li>
+<li>Manter coherencia pedagóxica nos materiais xerados.</li>
+<li>Apoiar tarefas que se repiten ao longo do curso escolar.</li>
+<li>Facilitar a organización do traballo docente.</li>
+</ul>
+<div class="admonition tip">
+<p><em>É importante aclarar que </em><strong><em>os asistentes de IA non substitúen ao profesorado, nin toman decisións educativas. </em></strong><em>Non avalían a aprendizaxe real, non coñecen o contexto emocional do alumnado nin aplican o currículo por si mesmos. Son ferramentas de apoio que actúan baixo supervisión humana e ao servizo do criterio profesional do docente.</em></p>
+</div>
+<hr />
+<h2 id="para-que-pode-servir-un-asistente-docente-de-ia">Para que pode servir un asistente docente de IA<a class="headerlink" href="#para-que-pode-servir-un-asistente-docente-de-ia" title="Permanent link">&para;</a></h2>
+<p>Un asistente docente de IA pode cumprir múltiples funcións no día a día do profesorado, sempre que se utilice cun enfoque pedagóxico claro. O seu valor reside en apoiar tarefas que requiren tempo, organización ou elaboración de borradores, permitindo ao docente centrarse na toma de decisións educativas e no acompañamento do alumnado.</p>
+<p>Entre os usos máis habituais dun asistente docente destacan:</p>
+<ol>
+<li>
+<p><strong>Apoio á planificación didáctica</strong></p>
+<p>Axuda a estruturar unidades didácticas, secuencias de sesións ou situacións de aprendizaxe a partir de obxectivos e criterios definidos polo docente.</p>
+</li>
+<li>
+<p><strong>Creación e revisión de materiais</strong></p>
+<p>Facilita a elaboración de borradores de apuntes, presentacións, guías ou materiais de apoio, así como a súa revisión e mellora.</p>
+</li>
+<li>
+<p><strong>Deseño de actividades e tarefas</strong></p>
+<p>Apoia a creación de propostas de actividades, exercicios graduados ou tarefas competenciais que posteriormente son adaptadas ao contexto da aula.</p>
+</li>
+<li>
+<p><strong>Preparación de rúbricas e instrumentos de avaliación</strong></p>
+<p>Axuda a elaborar rúbricas, listas de control ou indicadores de avaliación formativa coherentes cos obxectivos de aprendizaxe.</p>
+</li>
+<li>
+<p><strong>Organización de ideas, documentos e recursos</strong></p>
+<p>Permite ordenar información, resumir documentos, estruturar materiais e xestionar recursos de maneira máis eficiente.</p>
+</li>
+<li>
+<p><strong>Apoio á coordinación docente</strong></p>
+<p>Pode empregarse como soporte para preparar reunións de departamento, compartir criterios comúns ou elaborar documentación colectiva.</p>
+</li>
+</ol>
+<div class="admonition tip">
+<p>En todos estes usos, o asistente actúa como un apoio operativo e organizativo, mentres que o profesorado conserva o control sobre as decisións pedagóxicas, a avaliación e a relación educativa co alumnado.</p>
+</div>
+<hr />
+<h2 id="espazos-de-traballo-e-asistentes-configurables-nas-plataformas-actuais">Espazos de traballo e asistentes configurables nas plataformas actuais<a class="headerlink" href="#espazos-de-traballo-e-asistentes-configurables-nas-plataformas-actuais" title="Permanent link">&para;</a></h2>
+<p>As plataformas actuais de intelixencia artificial ofrecen diferentes mecanismos para crear espazos de traballo personalizados ou asistentes configurables que manteñen contexto, instrucións e fontes de referencia ao longo do tempo. Estes espazos permiten ao profesorado traballar cunha continuidade que vai moito máis alá da conversa puntual cun chatbot, convertendo a IA nun apoio estable integrado no fluxo habitual de traballo docente.</p>
+<p>Aínda que a denominación e as funcionalidades concretas varían segundo a ferramenta, o concepto pedagóxico común é permitir definir un marco de traballo persistente, no que se establecen obxectivos, criterios, documentos de referencia e un estilo de resposta coherente. Isto resulta especialmente útil no ámbito educativo, onde moitas tarefas repítense ao longo do curso e requiren manter coherencia pedagóxica.</p>
+<p>O relevante neste contexto non é a marca nin o modelo comercial, senón <strong>a capacidade de:</strong></p>
+<ul>
+<li>Manter instrucións estables sen ter que repetilas en cada interacción.</li>
+<li>Traballar a partir de fontes seleccionadas polo propio docente.</li>
+<li>Revisar e mellorar materiais de maneira iterativa.</li>
+<li>Construír coñecemento progresivamente ao longo do tempo.</li>
+</ul>
+<hr />
+<h2 id="gpt-personalizados-proxectos-e-espazos-persistentes">GPT personalizados, proxectos e espazos persistentes<a class="headerlink" href="#gpt-personalizados-proxectos-e-espazos-persistentes" title="Permanent link">&para;</a></h2>
+<p>Algunhas plataformas permiten crear asistentes personalizados nos que se definen instrucións fixas, roles e criterios de actuación. Estes asistentes poden empregarse para tarefas docentes recorrentes, mantendo coherencia no estilo, no enfoque pedagóxico e nos resultados xerados, incluso cando pasan días ou semanas entre usos.</p>
+<p>Exemplos de implementación deste concepto son:</p>
+<ol>
+<li>
+<p><strong>GPT personalizados</strong></p>
+<p>Asistentes configurados con instrucións estables que actúan segundo un rol definido polo docente (por exemplo, asistente de planificación, revisor de materiais ou xerador de actividades).</p>
+</li>
+<li>
+<p><strong>Proxectos ou espazos de traballo persistentes</strong></p>
+<p>Contornos nos que se manteñen documentos, conversacións e obxectivos ao longo do tempo, dispoñibles mesmo en versións gratuítas dalgunhas plataformas.</p>
+</li>
+<li>
+<p><strong>Gems e asistentes configurables noutras ferramentas</strong></p>
+<p>Sistemas equivalentes que permiten definir instrucións personalizadas para tarefas concretas, como ocorre en plataformas como Gemini.</p>
+</li>
+</ol>
+<p>Desde unha perspectiva educativa, estes espazos resultan especialmente útiles para:</p>
+<ul>
+<li>A planificación didáctica continuada ao longo dun trimestre ou curso.</li>
+<li>A creación iterativa de materiais, revisándoos e mellorándoos progresivamente.</li>
+<li>O mantemento de criterios comúns nun departamento ou equipo docente.</li>
+<li>A coherencia no estilo e no enfoque pedagóxico dos materiais compartidos.</li>
+</ul>
+<div class="admonition tip">
+<p><em>Ferramentas como ChatGPT, Gemini, Copilot ou Mistral ofrecen xa opcións, en maior ou menor medida, para crear este tipo de asistentes ou espazos configurables, incluíndo modalidades de uso gratuíto ou abertas, o que facilita a súa adopción no contexto da educación pública.</em></p>
+</div>
+<hr />
+<h2 id="asistentes-baseados-en-fontes-propias-notebooklm-e-ferramentas-similares">Asistentes baseados en fontes propias: NotebookLM e ferramentas similares<a class="headerlink" href="#asistentes-baseados-en-fontes-propias-notebooklm-e-ferramentas-similares" title="Permanent link">&para;</a></h2>
+<p>Unha das liñas máis interesantes para o ámbito educativo é o uso de asistentes que traballan exclusivamente a partir de fontes proporcionadas polo usuario. Este enfoque resulta especialmente axeitado para centros educativos, xa que permite limitar a xeración de contidos a documentos seleccionados polo profesorado, reducindo riscos de descontextualización ou erro.</p>
+<p>Ferramentas como <strong>NotebookLM</strong> permiten ao docente:</p>
+<ul>
+<li>Subir documentos propios (apuntes, programacións, normativa, textos legais, materiais de aula).</li>
+<li>Empregar a IA para extraer ideas clave, resumir contidos ou establecer relacións entre documentos.</li>
+<li>Xerar explicacións, actividades, preguntas ou adaptacións baseadas unicamente nesas fontes.</li>
+</ul>
+<p>Este tipo de asistentes resulta <strong>moi útil para:</strong></p>
+<ul>
+<li>Actualizar materiais existentes mantendo fidelidade ao currículo e ao proxecto educativo.</li>
+<li>Crear actividades coherentes cunha programación concreta ou cunha normativa determinada.</li>
+<li>Apoiar a adaptación de materiais a distintos niveis ou necesidades educativas.</li>
+<li>Garantir que os contidos xerados se basean en fontes fiables e coñecidas polo profesorado.</li>
+</ul>
+<div class="admonition tip">
+<p><em>Desde o punto de vista pedagóxico, este enfoque reforza a idea de que a IA non é unha fonte de autoridade nin de coñecemento autónomo, senón unha ferramenta de apoio á análise, reorganización e explotación didáctica da información.</em></p>
+</div>
+<hr />
+<h2 id="ferramentas-de-consulta-e-sintese-con-fontes-verificables-perplexity-e-outras-opcions">Ferramentas de consulta e síntese con fontes verificables: Perplexity e outras opcións<a class="headerlink" href="#ferramentas-de-consulta-e-sintese-con-fontes-verificables-perplexity-e-outras-opcions" title="Permanent link">&para;</a></h2>
+<p>Outra categoría relevante son as ferramentas que combinan a xeración de respostas coa consulta explícita de fontes, como é o caso de Perplexity ou solucións semellantes integradas noutras plataformas.</p>
+<p>Estas ferramentas <strong>permiten:</strong></p>
+<ul>
+<li>Realizar consultas a partir de preguntas formuladas polo docente.</li>
+<li>Acceder a respostas acompañadas de referencias ou ligazóns ás fontes utilizadas.</li>
+<li>Contrastar información e comprobar a súa actualización.</li>
+<li>No ámbito educativo, poden empregarse como apoio para:</li>
+<li>Actualizar exemplos, datos ou referencias en materiais didácticos.</li>
+<li>Preparar actividades baseadas na análise de información actual.</li>
+<li>Traballar co alumnado a competencia informacional, a busca crítica de información e a verificación de fontes.</li>
+</ul>
+<div class="admonition tip">
+<p><em>Cómpre lembrar que, aínda cando se ofrecen referencias, o profesorado debe revisar sempre a pertinencia, a calidade e a fiabilidade das fontes antes de incorporar os contidos xerados á aula.</em></p>
+</div>
+<hr />
+<h2 id="outras-plataformas-con-enfoques-semellantes">Outras plataformas con enfoques semellantes<a class="headerlink" href="#outras-plataformas-con-enfoques-semellantes" title="Permanent link">&para;</a></h2>
+<p>Ademais das ferramentas mencionadas, existen outras plataformas de uso gratuíto ou aberto que incorporan <strong>funcionalidades similares:</strong></p>
+<ul>
+<li>
+<p><strong>Gemini (Google)</strong>: Ofrece asistentes configurables (Gems) e boa integración con documentos e contornas educativas.</p>
+</li>
+<li>
+<p><strong>Microsoft Copilot</strong>: Integra asistentes de IA no ecosistema de Microsoft 365, facilitando o traballo con documentos, presentacións e organización docente.</p>
+</li>
+<li><strong>Mistral e ferramentas open source</strong>: Permiten explorar enfoques máis abertos ou autoaloxados, especialmente interesantes desde a perspectiva da soberanía dixital.</li>
+</ul>
+<div class="admonition tip">
+<p><em>Estas opcións amosan que o concepto de asistente estable non é exclusivo dunha única plataforma, senón unha tendencia xeral no desenvolvemento da IA aplicada á educación.</em></p>
+</div>
+<hr />
+<h2 id="criterio-pedagoxico-fronte-a-diversidade-de-ferramentas">Criterio pedagóxico fronte á diversidade de ferramentas<a class="headerlink" href="#criterio-pedagoxico-fronte-a-diversidade-de-ferramentas" title="Permanent link">&para;</a></h2>
+<p>A diversidade de plataformas e solucións dispoñibles pode xerar confusión ou unha sensación de dependencia tecnolóxica. Por este motivo, resulta fundamental adoptar un enfoque baseado <strong>no criterio pedagóxico</strong>, no que:</p>
+<ul>
+<li>Primeiro se define a tarefa docente que se quere apoiar.</li>
+<li>Despois se selecciona a ferramenta máis axeitada segundo o contexto, os recursos dispoñibles e as condicións legais.</li>
+<li>Finalmente se revisan, adaptan e validan os resultados xerados.</li>
+</ul>
+<p><strong>Vantaxes pedagóxicas e organizativas do uso de asistentes docentes de IA</strong></p>
+<p>O uso de asistentes de IA configurados especificamente para a docencia achega unha serie de vantaxes relevantes cando se integran cun criterio pedagóxico claro. Estas vantaxes non se limitan ao aforro de tempo, senón que afectan tamén á coherencia do ensino, á personalización da aprendizaxe e á organización do traballo docente.</p>
+<ol>
+<li>
+<p><strong>Aforro de tempo e redución da carga mecánica</strong></p>
+<p>Un asistente docente pode xerar en segundos borradores de exames, rúbricas, actividades, documentos informativos ou materiais de apoio que, doutro xeito, requirirían horas de traballo. Este aforro de tempo non debe entenderse como un fin en si mesmo, senón como unha oportunidade para que o profesorado poida dedicar máis esforzo a tarefas de maior valor educativo, como o acompañamento do alumnado ou a reflexión sobre a práctica docente.</p>
+</li>
+<li>
+<p><strong>Coherencia pedagóxica e estabilidade no estilo</strong></p>
+<p>Ao manter instrucións e criterios fixos, os asistentes permiten xerar materiais cun estilo coherente, un nivel de dificultade estable e unha estrutura repetible. Isto evita variacións aleatorias entre actividades ou documentos e contribúe a unha maior claridade para o alumnado.</p>
+</li>
+<li>
+<p><strong>P</strong><strong>ersonalización por materia, etapa e contexto</strong></p>
+<p>Os asistentes poden configurarse para unha materia concreta (Lingua, Matemáticas, Ciencias, Programación, Historia) e para un nivel educativo determinado (Educación Primaria, ESO, Bacharelato ou Formación Profesional). Isto facilita a creación de materiais adaptados ao currículo, ao contexto do centro e ás características do alumnado.</p>
+</li>
+<li>
+<p><strong>Reutilización e colaboración entre docentes</strong></p>
+<p>Un asistente ben deseñado pode ser reutilizado ao longo do tempo e compartido entre docentes dun mesmo departamento, dun centro educativo ou incluso dunha comunidade educativa máis ampla. Isto favorece o traballo colaborativo, a coherencia metodolóxica e a creación de recursos comúns.</p>
+</li>
+<li>
+<p><strong>Apoio á innovación educativa</strong></p>
+<p>O uso de asistentes docentes abre novas posibilidades para experimentar con metodoloxías, tarefas e formas de avaliación, integrando a intelixencia artificial como un recurso educativo máis. Sempre que se empregue con criterio, a IA pode contribuír á innovación pedagóxica sen substituír o papel central do profesorado.</p>
+</li>
+</ol>
+<hr />
+<h2 id="deseno-responsable-dun-asistente-docente">Deseño responsable dun asistente docente<a class="headerlink" href="#deseno-responsable-dun-asistente-docente" title="Permanent link">&para;</a></h2>
+<p>O deseño dun asistente docente de intelixencia artificial require unha reflexión previa que vai máis alá dos aspectos técnicos. Non se trata unicamente de configurar instrucións ou seleccionar unha ferramenta concreta, senón de definir con claridade para que se vai empregar o asistente, en que contexto educativo e con que límites pedagóxicos e legais.</p>
+<p>Un asistente ben deseñado pode converterse nun apoio estable e fiable para o profesorado. Pola contra, un asistente mal configurado ou utilizado sen criterio pode xerar confusión, dependencia excesiva da tecnoloxía ou incluso problemas legais e éticos. Por este motivo, o deseño responsable debe entenderse como unha parte esencial do uso educativo da IA.</p>
+<p><strong>A. Definir a finalidade e o rol do asistente</strong>
+O primeiro paso no deseño responsable dun asistente docente é definir con claridade a súa finalidade. Non todos os asistentes deben facer de todo, nin é recomendable crear asistentes demasiado xenéricos.</p>
+<p>Antes de poñelo en funcionamento, o profesorado debería responder a preguntas como:</p>
+<ul>
+<li>Que tarefas docentes vai apoiar este asistente?</li>
+<li>En que materias, niveis ou contextos se vai empregar?</li>
+<li>Vai ser un asistente persoal ou compartido?</li>
+</ul>
+<div class="admonition tip">
+<p><em>Definir un rol claro (por exemplo, asistente de planificación, revisor de materiais ou apoio á creación de actividades) axuda a limitar o seu uso e a mellorar a calidade dos resultados xerados.</em></p>
+</div>
+<p><strong>B. Establecer límites pedagóxicos claros</strong>
+Un asistente docente nunca debe substituír procesos educativos clave nin asumir funcións que corresponden ao profesorado. No seu deseño deben establecerse límites explícitos, tales como:</p>
+<ul>
+<li>Non realizar avaliacións finais nin cualificacións.</li>
+<li>Non tomar decisións pedagóxicas autónomas.</li>
+<li>Non xerar tarefas que resolvan directamente o núcleo cognitivo da actividade.</li>
+</ul>
+<div class="admonition tip">
+<p><em>Estes límites axudan a evitar usos indebidos e a reforzar o papel do docente como responsable último do proceso de ensino-aprendizaxe.</em></p>
+</div>
+<p><strong>C. Protección de datos e privacidade</strong>
+O deseño responsable dun asistente docente debe ter moi presente a protección de datos persoais, especialmente cando se traballa con menores. Entre as recomendacións básicas destacan:</p>
+<ul>
+<li>Non introducir datos persoais identificables do alumnado.</li>
+<li>Evitar subir documentos que conteñan información sensible.</li>
+<li>Empregar ferramentas que cumpran coa normativa vixente en materia de protección de datos.</li>
+</ul>
+<div class="admonition tip">
+<p><em>O profesorado debe asumir que calquera información introducida nun asistente pode ser procesada por sistemas externos, polo que a prudencia e o cumprimento normativo son imprescindibles.</em></p>
+</div>
+<p><strong>D. Uso ético e transparencia</strong>
+Un asistente docente debe empregarse de maneira ética e transparente. Isto implica:
+- Informar ao alumnado cando se emprega a IA como apoio á docencia.
+- Evitar presentar contidos xerados por IA como produción exclusivamente humana.
+- Promover unha actitude crítica fronte ás respostas xeradas.</p>
+<div class="admonition tip">
+<p><em>A transparencia contribúe a unha relación educativa baseada na confianza e na responsabilidade compartida.</em></p>
+</div>
+<p><strong>E. Asistentes persoais fronte a asistentes compartidos</strong>
+Non é o mesmo deseñar un asistente para uso persoal dun docente que un asistente destinado a ser compartido nun departamento ou nun centro educativo. No caso de asistentes compartidos, convén:</p>
+<ul>
+<li>Definir criterios comúns de uso.</li>
+<li>Establecer responsabilidades claras sobre a súa configuración e mantemento.</li>
+<li>Revisar periodicamente o seu funcionamento.</li>
+</ul>
+<div class="admonition tip">
+<p><em>Este enfoque evita incoherencias e garante un uso máis seguro e eficaz.</em></p>
+</div>
+<p><strong>F. Revisión, mellora e supervisión continua</strong>
+O deseño dun asistente docente non remata coa súa creación inicial. É necesario revisar periodicamente o seu funcionamento, detectar posibles erros ou desviacións e axustar as instrucións segundo as necesidades reais do profesorado e do alumnado.</p>
+<div class="admonition tip">
+<p><em>A supervisión humana constante é o elemento clave que garante que o asistente siga sendo un apoio útil e non un risco pedagóxico.</em></p>
+</div>
+<hr />
+<h2 id="exemplos-de-asistentes-por-perfis-docentes">Exemplos de asistentes por perfís docentes<a class="headerlink" href="#exemplos-de-asistentes-por-perfis-docentes" title="Permanent link">&para;</a></h2>
+<p>Este apartado presenta exemplos orientativos de asistentes docentes de intelixencia artificial configurados segundo distintos perfís profesionais do ámbito educativo. Os exemplos non deben entenderse como modelos pechados nin como receitas listas para aplicar sen adaptación. Pola contra, pretenden servir como punto de partida para que cada docente deseñe o seu propio asistente en función das súas necesidades reais e do contexto do seu centro.</p>
+<div class="admonition note">
+<p class="admonition-title"><strong>Asistente para profesorado de Educación Primaria</strong></p>
+<p><strong>Finalidade principal</strong>
+Apoio á planificación, creación de materiais adaptados e atención á diversidade.</p>
+<p><strong>Funcións habituais do asistente</strong></p>
+<ul>
+<li>Axudar a estruturar unidades didácticas con linguaxe clara e accesible.</li>
+<li>Crear materiais explicativos adaptados á idade do alumnado.</li>
+<li>Propoñer actividades graduadas e alternativas de reforzo.</li>
+<li>Apoiar a adaptación de materiais para alumnado con distintas necesidades.</li>
+</ul>
+<p><strong>Uso recomendado</strong>
+Asistente persoal do docente, con instrucións claras sobre linguaxe sinxela, enfoque competencial e non uso directo polo alumnado</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title"><strong>Asistente para profesorado de ESO</strong></p>
+<p><strong>Finalidade principal</strong>  <br />
+Deseño de actividades, secuencias didácticas e apoio á avaliación formativa.</p>
+<p><strong>Funcións habituais do asistente</strong></p>
+<ul>
+<li>Propoñer actividades contextualizadas e tarefas competenciais.</li>
+<li>Axudar a deseñar secuencias didácticas coherentes.</li>
+<li>Xerar rúbricas e instrumentos de avaliación formativa.</li>
+<li>Crear variantes de actividades para reforzo e ampliación.</li>
+</ul>
+<p><strong>Uso recomendado</strong>
+Asistente persoal ou de departamento, con normas claras sobre o uso da IA polo alumnado.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title"><strong>Asistente para profesorado de Bacharelato</strong></p>
+<p><strong>Finalidade principal:</strong>
+Apoio á planificación de tarefas complexas e á preparación de probas académicas.</p>
+<p><strong>Funcións habituais do asistente</strong></p>
+<ul>
+<li>Apoiar a elaboración de actividades de análise, comentario e argumentación.</li>
+<li>Axudar a estruturar traballos longos ou proxectos de investigación.</li>
+<li>Preparar criterios de avaliación detallados e rúbricas complexas.</li>
+</ul>
+<p><strong>Uso recomendado</strong>
+Asistente persoal, facendo explícitos os límites de uso da IA para garantir a autoría do alumnado.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title"><strong>Asistente para profesorado de Formación Profesional</strong></p>
+<p><strong>Finalidade principal</strong>
+Aproximar a aprendizaxe ao contexto profesional real.</p>
+<p><strong>Funcións habituais do asistente:</strong></p>
+<ul>
+<li>Propoñer actividades baseadas en casos reais ou simulados.</li>
+<li>Axudar a crear documentación técnica e guías de procedementos.</li>
+<li>Apoiar o deseño de proxectos vinculados ao ámbito profesional.
+<strong>Uso recomendado</strong>
+Asistente persoal ou compartido no equipo docente dun ciclo, con revisión constante dos contidos.</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title"><strong>Asistente para coordinador/a TIC ou responsable de dixitalización</strong></p>
+<p><strong>Finalidade principal</strong>
+Apoio á organización, formación e coordinación do uso da IA no centro.</p>
+<p><strong>Funcións habituais do asistente:</strong></p>
+<ul>
+<li>Axudar a elaborar guías internas sobre uso da IA.</li>
+<li>Apoiar a preparación de formacións para o profesorado.</li>
+<li>Xerar documentación orientativa e materiais de apoio.</li>
+</ul>
+<p><strong>Uso recomendado</strong>
+Asistente compartido, cun control claro sobre as instrucións e actualizacións.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title"><strong>Asistente para xefaturas de departamento ou equipos docentes</strong></p>
+<p><strong>Finalidade principal</strong>
+Favorecer a coherencia pedagóxica e o traballo colaborativo.</p>
+<p><strong>Funcións habituais do asistente:</strong></p>
+<ul>
+<li>Axudar a consensuar criterios de avaliación.</li>
+<li>Apoiar a elaboración de programacións comúns.</li>
+<li>Facilitar a organización de proxectos interdisciplinares.</li>
+</ul>
+<p><strong>Uso recomendado</strong>
+Asistente compartido, con responsabilidades definidas sobre a súa configuración.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title"><strong>Asistentes orientados a proxectos educativos</strong></p>
+<p><strong>Finalidade principal</strong>
+apoiar o deseño, desenvolvemento e seguimento de proxectos educativos con IA.</p>
+<p><strong>Funcións habituais do asistente:</strong></p>
+<ul>
+<li>Axudar a definir retos ou preguntas guía.</li>
+<li>Propoñer secuencias de actividades por fases do proxecto.</li>
+<li>Apoiar a elaboración de produtos finais e criterios de avaliación.</li>
+</ul>
+<p><strong>Uso recomendado</strong>
+Asistente específico para cada proxecto, cun período de uso limitado e revisión continua.</p>
+</div>
+<hr />
+<h2 id="como-crear-un-asistente-docente-paso-a-paso">Como crear un asistente docente paso a paso<a class="headerlink" href="#como-crear-un-asistente-docente-paso-a-paso" title="Permanent link">&para;</a></h2>
+<p>Este apartado ten como obxectivo ofrecer ao profesorado unha guía clara e transferable para crear asistentes docentes de intelixencia artificial, independentemente da plataforma empregada. Non se trata dun manual técnico específico dunha ferramenta concreta, senón dun modelo común que pode aplicarse a GPT personalizados, proxectos ou espazos persistentes, Gems, asistentes baseados en documentos ou solucións semellantes.</p>
+<div class="admonition tip">
+<p class="admonition-title">O ennfoque é deliberadamente pedagóxico</p>
+<p>** crear un asistente docente implica tomar decisións educativas previas e definir con claridade o seu rol, as súas funcións e os seus límites.*</p>
+</div>
+<p><strong>A. Definir o propósito do asistente</strong>
+O primeiro paso consiste en definir con precisión para que se quere crear o asistente. Un asistente eficaz non intenta facer de todo, senón que responde a unha necesidade concreta da práctica docente.</p>
+<p>Preguntas clave nesta fase:</p>
+<ul>
+<li>Que tarefas docentes quero apoiar con este asistente?</li>
+<li>Vai empregarse de forma recorrente ou para un proxecto concreto?</li>
+<li>Será un asistente persoal ou compartido?</li>
+</ul>
+<div class="admonition tip">
+<p><em>Un propósito ben definido evita asistentes excesivamente xenéricos e mellora a calidade dos resultados.</em></p>
+</div>
+<p><strong>B. Establecer o rol e o contexto educativo</strong>
+Unha vez definido o propósito, cómpre concretar o rol que debe asumir o asistente. Isto implica describir como debe comportarse, a quen vai dirixirse e en que contexto educativo vai operar.</p>
+<p>Aspectos a definir:</p>
+<ul>
+<li>Etapa educativa e nivel do alumnado.</li>
+<li>Materia ou ámbito de coñecemento.</li>
+<li>Enfoque metodolóxico (competencial, práctico, teórico).</li>
+<li>Linguaxe e estilo de resposta.</li>
+</ul>
+<div class="admonition tip">
+<p><em>Esta definición axuda a que o asistente xere respostas coherentes e adecuadas ao contexto.</em></p>
+</div>
+<p><strong>C. Redactar instrucións iniciais claras (prompt base)</strong>
+As instrucións iniciais constitúen o núcleo do asistente. Deben ser claras, explícitas e orientadas ao uso educativo.
+Unha estrutura habitual de instrucións pode incluír:</p>
+<ul>
+<li>Descrición do rol do asistente.</li>
+<li>Tipo de tarefas que pode realizar.</li>
+<li>Límites explícitos (o que non debe facer).</li>
+<li>Nivel educativo ao que se dirixe.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Exemplo orientativo de instrución base</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Actúa como asistente docente para a creación de materiais didácticos en ESO.O teu rol é axudar a xerar borradores de actividades e explicacións claras, adaptadas ao currículo.Non debes avaliar nin cualificar ao alumnado nin resolver directamente as tarefas.Emprega unha linguaxe clara e estruturada, axeitada ao nivel educativo.
+</span></code></pre></div>
+</div>
+<div class="admonition tip">
+<p><em>Este tipo de instrución pode adaptarse facilmente a distintos perfís e plataformas.</em></p>
+</div>
+<p><strong>D. Incorporar documentos e referencias propias</strong>
+Sempre que a plataforma o permita, é recomendable incorporar documentos de referencia propios, como programacións, currículos, materiais de aula ou normativa. Isto axuda a que o asistente traballe a partir de fontes coñecidas e reduce erros de contextualización.
+A incorporación de documentos resulta especialmente útil para:</p>
+<ul>
+<li>Manter coherencia curricular.</li>
+<li>Actualizar materiais existentes.</li>
+<li>Crear actividades aliñadas cun proxecto educativo concreto.</li>
+</ul>
+<p><strong>E. Probar, revisar e mellorar o asistente</strong>
+A creación dun asistente docente é un proceso iterativo. Unha vez configurado, é necesario probalo con tarefas reais, analizar as respostas e axustar as instrucións segundo os resultados obtidos.
+Recoméndase:</p>
+<ul>
+<li>Comezar con tarefas sinxelas.</li>
+<li>Detectar respostas pouco axeitadas ou excesivamente xenéricas.</li>
+<li>Refinar progresivamente as instrucións.</li>
+<li>Esta revisión continua garante un uso máis eficaz e seguro.</li>
+</ul>
+<p><strong>F. Adaptación segundo o perfil docente</strong>
+As instrucións dun asistente poden adaptarse facilmente aos distintos perfís docentes descritos. Por exemplo:</p>
+<ul>
+<li>En Educación Primaria, priorizar linguaxe sinxela e límites estritos.</li>
+<li>En ESO, incorporar tarefas competenciais e avaliación formativa.</li>
+<li>En Formación Profesional, contextualizar as tarefas no ámbito profesional.</li>
+<li>En proxectos educativos, definir claramente a duración e os obxectivos do asistente.</li>
+</ul>
+<div class="admonition tip">
+<p><em>Esta adaptación permite reutilizar a mesma estrutura de asistente en contextos diversos.</em></p>
+</div>
+<hr />
+<h2 id="uso-compartido-de-asistentes-en-departamentos-e-centros-educativos">Uso compartido de asistentes en departamentos e centros educativos<a class="headerlink" href="#uso-compartido-de-asistentes-en-departamentos-e-centros-educativos" title="Permanent link">&para;</a></h2>
+<p>O uso de asistentes docentes de intelixencia artificial pode ir máis alá do ámbito individual e converterse nun recurso compartido a nivel de departamento ou de centro educativo. Este enfoque permite aproveitar mellor o potencial da IA, fomentar o traballo colaborativo e avanzar cara a prácticas máis coherentes e coordinadas. Porén, tamén require unha planificación consciente, acordos previos e criterios comúns de uso que eviten improvisacións ou aplicacións desiguais.</p>
+<p>O uso compartido non debe entenderse como unha simple difusión dunha ferramenta nin como unha imposición tecnolóxica, senón como unha decisión pedagóxica e organizativa, aliñada co proxecto educativo do centro, coas liñas metodolóxicas acordadas e coa normativa vixente. Compartir asistentes implica asumir responsabilidades colectivas sobre o seu deseño, uso e revisión.</p>
+<p><strong>Vantaxes do uso compartido</strong></p>
+<ul>
+<li>O deseño e uso compartido de asistentes docentes pode achegar beneficios relevantes cando se xestiona de maneira planificada:</li>
+<li>Favorece a coherencia metodolóxica e avaliativa dentro dun departamento ou etapa educativa.</li>
+<li>Reduce a duplicación de esforzos, evitando que cada docente cree recursos similares de maneira illada.</li>
+<li>Facilita a creación de materiais comúns, rúbricas compartidas e criterios de avaliación consensuados.</li>
+<li>Apoia a incorporación progresiva da IA por parte do profesorado menos experimentado, promovendo unha aprendizaxe entre iguais.</li>
+<li>Contribúe a unha cultura de centro baseada na colaboración e na reflexión pedagóxica compartida.</li>
+</ul>
+<p><strong>Tipos de asistentes compartidos</strong>
+Nun centro educativo poden coexistir distintos tipos de asistentes compartidos, segundo a súa finalidade:</p>
+<ul>
+<li>Asistentes de departamento, orientados a unha materia concreta, que axudan a manter criterios comúns en programacións, actividades e avaliación.</li>
+<li>Asistentes de etapa, útiles para establecer liñas metodolóxicas compartidas en Educación Primaria, ESO, Bacharelato ou Formación Profesional.</li>
+<li>Asistentes para proxectos interdisciplinares, cun uso limitado no tempo e centrados nun reto ou proxecto concreto.</li>
+<li>Asistentes de apoio organizativo, destinados á elaboración de documentación, actas, memorias ou coordinación interna.</li>
+</ul>
+<div class="admonition tip">
+<p><em>Cada tipo require un nivel distinto de control, actualización e supervisión, así como unha definición clara do seu ámbito de actuación.</em></p>
+</div>
+<p><strong>Criterios para un uso compartido responsable</strong>
+Para garantir un uso seguro, eficaz e pedagoxicamente axeitado dos asistentes compartidos, recoméndase establecer algúns criterios básicos:</p>
+<ul>
+<li>Definir claramente quen crea, quen pode modificar e quen mantén o asistente.</li>
+<li>Establecer instrucións comúns, roles claros e límites explícitos de actuación.</li>
+<li>Acordar de maneira colectiva que usos están permitidos e cales non.</li>
+<li>Revisar periodicamente o funcionamento do asistente e actualizar as súas instrucións.</li>
+</ul>
+<div class="admonition tip">
+<p><em>Estes criterios contribúen a evitar incoherencias, usos indebidos ou expectativas pouco realistas sobre o papel da IA.</em></p>
+</div>
+<p><strong>Relación coas normas e políticas de centro</strong>
+O uso compartido de asistentes docentes debe encaixar nas normas internas do centro e na política de uso da intelixencia artificial. É recomendable que:</p>
+<ul>
+<li>Os asistentes compartidos sexan coñecidos e validados polos órganos de coordinación docente.</li>
+<li>Existan indicacións claras e accesibles para todo o profesorado sobre o seu uso.</li>
+<li>Se informe ao alumnado cando a IA se emprega de forma sistemática no deseño de actividades ou materiais.</li>
+</ul>
+<div class="admonition tip">
+<p><em>Este aliñamento garante transparencia, coherencia institucional e seguridade xurídica.</em></p>
+</div>
+<hr />
+<h2 id="limitacions-e-recomendacions-de-uso">Limitacións e recomendacións de uso<a class="headerlink" href="#limitacions-e-recomendacions-de-uso" title="Permanent link">&para;</a></h2>
+<p>A pesar das súas vantaxes, os asistentes docentes de IA presentan limitacións que deben ser coñecidas e tidas en conta. Unha integración responsable require identificar estes límites e adoptar medidas preventivas para evitar riscos pedagóxicos, éticos ou organizativos.</p>
+<p><strong>A.  Limitacións dos asistentes docentes</strong>
+Entre as principais limitacións destacan:</p>
+<ul>
+<li>Poden xerar erros conceptuais, imprecisións ou respostas incompletas.</li>
+<li>Non coñecen o contexto real da aula nin a situación emocional ou social do alumnado.</li>
+<li>Poden reproducir sesgos presentes nos datos cos que foron adestrados.</li>
+<li>Non teñen criterio pedagóxico nin capacidade de xuízo profesional.</li>
+</ul>
+<p><strong>B. Riscos dun uso inadecuado</strong>
+Un uso acrítico, excesivo ou mal planificado dos asistentes pode derivar en:</p>
+<ul>
+<li>Dependencia excesiva da tecnoloxía por parte do profesorado ou do alumnado.</li>
+<li>Perda de control pedagóxico sobre o deseño das actividades.</li>
+<li>Homoxeneización excesiva dos materiais e empobrecemento metodolóxico.</li>
+<li>Confusión sobre a autoría dos contidos e a responsabilidade académica.</li>
+</ul>
+<p><strong>C. Recomendacións finais para o profesorado e os centros</strong>
+Para un uso responsable e sostible dos asistentes docentes de IA, recoméndase:</p>
+<ul>
+<li>Empregar os asistentes como apoio á práctica docente, non como substituto do profesorado.</li>
+<li>Revisar sempre os contidos xerados antes do seu uso na aula.</li>
+<li>Establecer normas claras de uso da IA para o alumnado.</li>
+<li>Priorizar a formación continua e a reflexión pedagóxica compartida.</li>
+<li>Integrar o uso da IA dentro dunha estratexia de centro coherente e consensuada.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Anexos de este capítulo</p>
+<ul>
+<li><a href="anexo3.html"><strong>Anexo III - Asistentes de IA para o profesorado</strong></a></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver ao principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pé" >
+        
+          
+          <a href="capitulo5.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Capítulo 5">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Capítulo 5
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="capitulo7.html" class="md-footer__link md-footer__link--next" aria-label="Seguinte: Capítulo 7">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Seguinte
+              </span>
+              <div class="md-ellipsis">
+                Capítulo 7
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2025 · Javier Feijóo López · Guía práctica sobre o uso educativo da Intelixencia Artificial · Contido baixo licenza <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.gl" target="_blank">
+  CC BY-NC-SA 4.0
+</a> · <a href="/about/autor.html">Sobre o autor</a>
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.instant", "navigation.sections", "navigation.expand", "navigation.top", "toc.integrate", "content.code.copy", "navigation.footer"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado no cortapapeis", "clipboard.copy": "Copiar no cortapapeis", "search.result.more.one": "1 m\u00e1is nesta p\u00e1xina", "search.result.more.other": "# m\u00e1is nesta p\u00e1xina", "search.result.none": "Sen resultados", "search.result.one": "1 resultado atopado", "search.result.other": "# resultados atopados", "search.result.placeholder": "Insira un termo", "search.result.term.missing": "Falta", "select.version": "Seleccionar version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
