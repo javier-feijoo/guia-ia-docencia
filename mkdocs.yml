@@ -1,6 +1,8 @@
 site_name: O uso educativo da Intelixencia Artificial - Guía práctica
 site_description: Guía educativa para docentes para o uso da IA a nivel profesional e educativo.
 site_author: Javier Feijóo López
+site_url: https://javier-feijoo.github.io/guia-ia-docencia
+
 
 docs_dir: contenido
 site_dir: site
