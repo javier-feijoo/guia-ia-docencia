@@ -1,6 +1,14 @@
-name: MkDocs build test
+name: Deploy MkDocs
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   build:
@@ -15,3 +23,15 @@ jobs:
       - run: pip install mkdocs-material
 
       - run: mkdocs build
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    steps:
+      - uses: actions/deploy-pages@v4
