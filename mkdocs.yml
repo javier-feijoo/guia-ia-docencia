@@ -1,0 +1,93 @@
+site_name: O uso educativo da Intelixencia Artificial - Guía práctica
+site_description: Guía educativa para docentes para o uso da IA a nivel profesional e educativo.
+site_author: Javier Feijóo López
+
+docs_dir: contenido
+site_dir: site
+use_directory_urls: false
+
+theme:
+  name: material
+  language: gl
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - toc.integrate
+    - content.code.copy
+    - navigation.footer
+
+
+plugins:
+  - search:
+      lang: es
+
+nav:
+  - Inicio: index.md
+
+  - Guía:
+      - Capítulo 0: capitulo0.md
+      - Capítulo 1: capitulo1.md
+      - Capítulo 2: capitulo2.md
+      - Capítulo 3: capitulo3.md
+      - Capítulo 4: capitulo4.md
+      - Capítulo 5: capitulo5.md
+      - Capítulo 6: capitulo6.md
+      - Capítulo 7: capitulo7.md
+      - Capítulo 8: capitulo8.md
+      - Capítulo 9: capitulo9.md
+      - Capítulo 10: capitulo10.md
+      - Capítulo 11: capitulo11.md
+      - Capítulo 12: capitulo12.md
+      - Capítulo 13: capitulo13.md
+      - Capítulo 14: capitulo14.md
+
+  - Anexos:
+      - Anexo 1: anexo1.md
+      - Anexo 2: anexo2.md
+      - Anexo 3: anexo3.md
+      - Anexo 4: anexo4.md
+      - Anexo 5: anexo5.md
+      - Anexo 6: anexo6.md
+      - Anexo 7: anexo7.md
+      - Anexo 8: anexo8.md
+      - Glosario: anexo9.md
+      - Recursos: anexo10.md
+
+  - Sobre o autor: about/autor.md
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - tables
+  - fenced_code
+  - codehilite
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.details
+
+extra:
+  generator: false
+
+extra_css:
+  - styles/extra.css
+
+copyright: >
+  © 2025 · Javier Feijóo López ·
+  Guía práctica sobre o uso educativo da Intelixencia Artificial ·
+  Contido baixo licenza
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.gl" target="_blank">
+    CC BY-NC-SA 4.0
+  </a> ·
+  <a href="/about/autor.html">Sobre o autor</a>
