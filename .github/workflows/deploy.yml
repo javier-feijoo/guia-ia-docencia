@@ -1,9 +1,17 @@
-name: Test Actions
+name: MkDocs build test
 
 on: [push]
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Actions OK"
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - run: pip install mkdocs-material
+
+      - run: mkdocs build
